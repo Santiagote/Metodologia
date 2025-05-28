@@ -1,0 +1,865 @@
+﻿Received 15 October 2024, accepted 17 November 2024, date of publication 29 November 2024, date of current version 24 January 2025.
+Digital Object Identifier 10.1109/ACCESS.2024.3509036
+
+Exploring the Integration of Blockchain and
+Distributed DevOps for Secure, Transparent,
+and Traceable Software Development
+JUNAID NASIR QURESHI 1, MUHAMMAD SHOAIB FAROOQ 1, USMAN ALI1,
+ADEL KHELIFI2, (Senior Member, IEEE), AND ZABIHULLAH ATAL 3
+1School of System and Technology, Department of Computer Science, University of Management and Technology, Lahore 54000, Pakistan
+2Computer Science and Information Technology, Abu Dhabi University, Abu Dhabi, United Arab Emirates
+3Department of Computer Science, Kardan University, Kabul 1007, Afghanistan
+
+Corresponding author: Zabihullah Atal (z.atal@kardan.edu.af)
+
+ABSTRACT Distributed DevOps is a software development methodology that aims to integrate the work
+of development and operations teams without being bound by geographical constraints. This methodology
+excels in enhancing collaboration and speeding software development. However, it does suffer from a lack
+of security, transparency, and traceability, which can result in project delays, a lack of trust between stake-
+holders, and even project failure. This paper addresses these issues of Distributed DevOps by implementing
+Blockchain technology. In this paper, we propose a novel framework that leverages blockchain technology
+to address the challenges faced by Distributed DevOps. Through performance analysis, we demonstrate
+the effectiveness of our framework in a real-world scenario, highlighting its ability to improve trans-
+parency, traceability, and the security of the DevOps pipeline. Our findings underscore the potential of
+blockchain-empowered solutions in revolutionizing DevOps practices. Furthermore, this research offers
+a practical framework for organizations seeking to optimize their development processes by integrating
+blockchain technology.
+
+INDEX TERMS DevOps, blockchain, smart contracts, distributed DevOps, interplanetary file system,
+decentralized.
+
+I. INTRODUCTION DevOps workflow. On the other hand, Distributed DevOps is
+Software development has been becoming more complex day an approach to developing software that involves distributed
+by day, and to overcome the complexities and challenges of teams working together to build, deploy, and collaboratively
+software development, one of the best approaches is using maintain the software [4]. In traditional DevOps models,
+DevOps. DevOps is a relatively new technique used to give developers and operations teams work together to build and
+new software updates with maximum reliability and accuracy deploy software, but this collaboration often occurs within a
+while doing continuous integration and continuous develop- single geographical location. In contrast, Distributed DevOps
+ment (CI/CD) [1]. DevOps combines the Development Team involves geographically dispersed teams that may not be
+and Operation Team’s people, processes, and technology to part of the same organization. The potential advantage of
+work in a collaborative environment for delivering software distributed DevOps is that it allows organizations to tap into
+as a service [2]. DevOps eliminates the gap between the a wider pool of talent and expertise, as they are not limited to
+Development Team and the Operation Team [3], and because a single location. It can also enable organizations to be more
+of that, the software update can be released successfully agile and responsive to changing market conditions, as they
+and rapidly. Figure 1 shows a visual representation of the can quickly bring new resources online as needed.
+
+The adoption of DevOps practices in distributed teams
+The associate editor coordinating the review of this manuscript and offers numerous benefits, but despite being a highly effective
+
+approving it for publication was Thanh Ngoc Dinh . approach for software development, it presents challenges
+
+
+ 2024 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License.
+VOLUME 13, 2025 For more information, see https://creativecommons.org/licenses/by/4.0/ 15489
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+are achieved. Blockchain combines the uniqueness and
+innovation of computing technologies like distributed data
+storage, decentralized peer-to-peer transactions, intelligent
+consensus mechanisms, and dynamic encryption algo-
+rithms [12]. Since its emergence, blockchain technology
+has undergone significant advancements, enabling the con-
+struction of Smart Contracts that automatically store and
+execute code on the blockchain. These smart contracts are
+also excellent in streamlining digital interactions and transac-
+tions [13]. To overcome the challenges of trust, transparency,
+security, and traceability in software development with Dis-
+tributed DevOps, an efficient blockchain-based framework is
+
+FIGURE 1. DevOps Workflow [5]. essential.
+
+in areas such as transparency, trust, security, and traceabil-
+ity. The problem that this study addresses is the need to
+enhance transparency, trust, security, and traceability within
+Distributed DevOps. It is critical to establish trust and trans-
+parency, particularly when teams are working across different
+locations and time zones [6], for instance, considering a
+scenario where teams are located on separate continents.
+The lack of transparency and trust can result in poor col-
+laboration and communication between team members [7],
+leading to misunderstandings and misaligned goals. This can FIGURE 2. Blockchain Representation.
+
+also result in delays, wasted effort, and decreased productiv-
+ity. Security is also paramount to prevent malicious actors In this paper, we propose a framework that seamlessly
+from disrupting or compromising the project [8] because integrates Distributed DevOps with blockchain technology,
+the development pipeline is susceptible to cyber threats and leveraging the benefits of transparency, traceability, and secu-
+malicious attacks [9]. Imagine a situation where some unau- rity. The integration is facilitated through the use of the
+thorized person accesses critical project data. This can result InterPlanetary File System (IPFS), Smart Contracts, and
+in data breaches that can be the reason for financial losses or consensus mechanisms. IPFS ensures the secure storage
+project failure in the worst-case scenario. Moreover, software of critical files such as project plans, code, and artefacts,
+traceability also holds significant importance as it allows with only their hash values uploaded to the blockchain
+the traceability of different artefacts, including requirements, via Smart Contracts. This not only ensures data integrity
+design models, and code [10] for example, a software bug but also streamlines the DevOps process. The Smart Con-
+surfaces during the testing phase. In the absence of com- tracts automate tasks, reducing the time and effort required
+prehensive traceability, identifying the root cause becomes for the software development cycle. Robust security mea-
+similar to finding a needle in a haystack. This lack of trace- sures, including cryptographic hashing and encryption, are
+ability can result in prolonged debugging cycles, increased implemented to protect against cyber threats. The consensus
+costs, and project delays. algorithm is implemented to bring all the nodes in agreement
+
+Blockchain technology can significantly impact Dis- and is used to achieve agreement on a single data value
+tributed DevOps and software development as a whole for among distributed processes or systems. Additionally, scal-
+several reasons. Its decentralized nature, immutability, and ability concerns inherent in blockchain are mitigated through
+distributed ledger can ensure security, trust, and traceability the utilization of IPFS. This introduction aims to provide a
+in the software development pipeline. Blockchain can be foundational understanding of our innovative framework.
+defined as an interconnected sequence of blocks, where each The novelty of our proposed framework lies in its com-
+block consists of transactions, hash, and the previous block’s prehensive approach to enhancing the security, traceability,
+hash, as shown in Figure 2, resulting in decentralized and and transparency of software development within distributed
+tamper-proof data [11]. With each block in the chain con- teams using DevOps. The framework leverages the capa-
+taining a cryptographic hash to the previous block, it’s nearly bilities of blockchain, including distributed data storage,
+impossible to alter data without affecting the entire chain. decentralized peer-to-peer transactions, intelligent consen-
+This ensures that the transactions done on the blockchain are sus mechanisms, and dynamic encryption algorithms. This
+safe and tamperproof. Every transaction in the blockchain approach addresses the identified shortcomings of Dis-
+is recorded in a distributed ledger which is visible to all tributed DevOps, distinguishing this research from previous
+participants, due to this feature, transparency and traceability studies in this specific domain. The strategy also has the
+
+15490 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+potential to mitigate issues between clients and software development processes. This paper explores the potential
+development teams. We have also implemented the frame- of Blockchain as a means to address these challenges by
+work to assess its performance in a real-world scenario. The enabling robust tracking and traceability mechanisms within
+results show that in our framework, the time of adding a new Agile software development. Thus, this research is only for
+block in the chain is better as compared to most well-known agile software development and not DevOps.
+blockchains e.g., Bitcoin, and Ethereum. The findings of this Krishnaiah et al. [19] present a survey of how metadata
+research highlight the significant potential of Blockchain to of software development is presented by using blockchain
+revolutionize distributed DevOps by making it more secure, technology. The survey is based on security and privacy
+transparent, traceable, and trusty. for data storage. Our model works for Distributed DevOps
+
+The remaining paper organized is as follows: In Section II, software development processes.
+the related work has been presented, and in Section III, Al-Nakeeb et al. [20] have given innovative work to
+we have elaborated Preliminaries used in the model. The digitize the transformation of information for Business Intel-
+proposed framework is shown in Section IV, and Section V ligence and Analytics, which affects the cloud and DevOps
+contains the implementation and performance. Further- in managing the projects. It reflects the idea but differs in
+more, in Section VI, the discussion is shown, and finally, comparison to our distributed software development process
+Section VII describes the conclusion and future work. integration of blockchain for DevOps.
+
+Terzi and Stamelos [21] provide security and data qual-
+II. RELATED WORK ity management for eHealth systems using blockchain. Our
+There has been a significant amount of research done on the model is generally not just for health care and reflects
+intersection of blockchain with DevOps and other software blockchain with DevOps for a distributed environment.
+development models. Here are a few examples of research in Qureshi and Farooq [22] provide the working frame-
+this area: work for distributed software development based on
+
+Bankar and Shah [14] also presented a paper that inter- blockchain. It integrates the blockchain in a distributed soft-
+sects blockchain with DevOps. This paper describes how ware development environment but does not integrate the
+blockchain technology can be used in DevOps for software DevOps.
+development. The benefits of this include improved qual- These are just a few examples of the many research
+ity and performance, as well as increased security. This is efforts focused on the blockchain with DevOps and other
+achieved by storing all project artefacts in a decentralized software development models. It is worth noting that while
+and secure blockchain environment. Although, the proposed these studies have the potential to bring many benefits to
+solution does not provide a solution when teams are working DevOps and other software development processes, they do
+in a distributed environment. not present any framework that is suitable for Distributed
+
+Akbar et al. [15] have investigated the potential bene- DevOps where teams are not in the same place or even time
+fits of using blockchain technology in a DevOps paradigm. zone.
+A framework is proposed which helps merge the characteris- The novelty of our proposed framework is that it could
+tics of blockchain with the DevOps paradigm. This provides make it simpler for distributed teams to communicate and
+an effective means for the adoption of blockchain in DevOps share data in a secure, traceable, and immutable environment.
+while ensuring its advantages over other solutions are max- We have presented a comprehensive strategy for implement-
+imized. However, the proposed framework does not address ing DevOps methods concerning Blockchain to successfully
+any parts related to payment. execute projects while reducing conflicts. We have solved
+
+Tariq and Colomo-Palacios [16] analyzed the usage and the issues of traceability, trust, and transparency of Dis-
+benefits of Blockchain Smart Contracts in Software Engi- tributed DevOps so that everyone can work in a trusted
+neering. The study also highlighted several challenges that and more secure environment. DevOps phases: project ini-
+have yet to be addressed by current methodologies. The tiation, continuous development, continuous integration &
+findings suggest that a greater practical application of this delivery, continuous deployment, and continuous monitoring
+system has the potential to pave the way for future research are shown, and how they will work with the Blockchain is
+opportunities. However, this study does not mention any also described. Using cryptocurrencies and digital wallets,
+about DevOps or Distributed DevOps. we have also resolved payment-related issues. In addition, the
+
+Faruk et al. [17] examine the impact of existing soft- Interplanetary File System is used to address the scalability
+ware engineering processes. They consider the need to adopt issue of the Blockchain.
+new concepts and evolve current software engineering pro-
+cesses for blockchain systems. The study also looks at the III. PRELIMINARIES
+role of software project management in the development of This section highlights the preliminaries for the proposed
+blockchain-oriented software. Nevertheless, this was a sys- framework. The major components that will be used in this
+tematic study and does not present any kind of framework. framework will be described in this section including, IPFS,
+
+Ramakrishna [18] present a novel framework that Decentralized Applications, Blockchain, Smart Contracts,
+integrates Blockchain technology into Agile software and Jenkins.
+
+VOLUME 13, 2025 15491
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+TABLE 1. Comparison of the proposed framework with related work.
+
+A. IPFS (INTERPLANETARY FILE SYSTEM) D. JENKINS
+IPFS (Interplanetary File System) enables decentralized stor- Jenkins is a widely used open-source automation tool for
+age and sharing of data in a content-addressable distributed CI/CD in software development [28]. Its flexibility, exten-
+file system [23]. It operates by storing clusters of hashed sibility, and support for pipeline-as-code make it a popular
+files in individual nodes of the system [24]. IPFS uses a choice among development teams. Its web-based user inter-
+peer-to-peer network to make it easy for people to share faces, collection of plugins, and other various features make
+files without having to go through central authorities or it easy to manage and monitor the build, test, and deployment
+servers while also ensuring data resilience and availabil- process, which leads to more efficient and streamlined soft-
+ity. With content-addressed links, it reduces redundancy and ware development.
+accelerates content retrieval, promoting a more efficient and
+censorship-resistant internet infrastructure. IV. PROPOSED FRAMEWORK
+
+In this section, a proposed framework is presented that will
+B. BLOCKCHAIN AND SMART CONTRACTs make the CI/CDmore traceable, secure, and trustworthy even
+Blockchain is a decentralized ledger system that offers a when the teams are scattered in different locations. In this
+safe, transparent, and permanent record of transactional data framework, the Blockchain, DApps, Jenkins, Smart Con-
+between two parties [25]. Through the use of cryptographic tracts, and IPFS have been used tomakeDevOpsmore secure,
+techniques, it produces a record of transactions that cannot be transparent, traceable, and immutable without disturbing the
+altered. This record takes the form of a chain of blocks, each automation of DevOps. Figure 3. shows the flow chart of the
+of which references the block that came before it. proposed framework.
+
+Smart Contracts are code snippets designed to execute The main goal of this study is to bring data like source
+versatile tasks [26]. They are kept on a blockchain. code, files, and artefacts to a distributed ledger so that it
+
+They make it possible to execute complicated transactions can become accessible easily for every stakeholder while still
+in away that is tamper-proof, transparent, and efficient, which being tamperproof and secure.
+could potentially reduce the need for intermediaries. Table 1
+shows the proposed framework comparison. A. HIGH-LEVEL ARCHITECTURE
+
+The high-level abstract architecture for the proposed frame-
+C. DECENTRALIZED APPLICATIONS work is shown in Figure 4. It shows the overall working of
+DApps are open-source, decentralized applications that can the model that will use Blockchain, an Interplanetary File
+operate without human intervention [27]. These applications System, and a Smart contract. In architecture, the focus is on
+are made with smart contracts and have a front and back end data being decentralized without being in control of a central
+that runs on a decentralized peer-to-peer network. authority.
+
+15492 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+FIGURE 3. Proposed framework process flow.
+
+B. LAYERED ARCHITECTURE rules. This layer plays a critical role in facilitating the func-
+The framework adheres to the blockchain architectural style, tioning of the system by ensuring that all interactions are
+and we have presented the 7 layered architecture in Figure 5. carried out by established rules and regulations.
+
+1) PRESENTATION LAYER 4) TRUST LAYER
+The proposed system’s Presentation Layer includes a The Trust Layer of the layered architecture of distributed
+user-facing interface and a decentralized application (DApp). DevOps is responsible for managing the system’s consensus
+Its primary goal is to connect clients and DevOps teams to the algorithms, such as Proof of Stake or Proof-of-Work. The
+system. trust layer plays a critical role in ensuring the security and
+
+reliability of the system by implementing robust consensus
+algorithms and security protocols.
+
+2) APPLICATION LAYER
+The metadata relating to transaction records, payments, 5) TRANSACTION LAYER
+mockups, prototypes, etc., along with agreements made The transaction layer is responsible for facilitating the devel-
+between DevOps teams and clients in the form of videos, text, opers and customers by enabling them to trigger transactional
+and audio, are present within this layer. Digital currencies, smart contracts. This layer also oversees the processes of
+including ETH, USDT, BUSD, or BTC, are also in this layer mining/staking and validating the blocks containing these
+to facilitate transactions after the completion of one success- transactions. The transaction layer plays a critical role in the
+ful iteration. The primary function of this layer is to enable functioning of the proposed system.
+seamless communication among stakeholders while serving
+as an intermediary between the Presentation Layer and the 6) HARDWARE/INFRASTRUCTURE LAYER
+Business Logic Layer. This layer includes the peer-to-peer network that validates
+
+transactions and a distributed storage system that stores and
+3) BUSINESS LOGIC LAYER retrieves files on the decentralized storage systems.
+This layer has all the smart contracts that govern the terms
+and conditions of interactions within the system. It serves as 7) SECURITY LAYER
+an active database for these contracts, enabling the acknowl- The Security Layer is responsible for security measures to
+edgement, execution, and enforcement of communication protect the network from potential attacks. The security layer
+
+VOLUME 13, 2025 15493
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+works parallel with the rest of the system, incorporating TABLE 3. File for organization’s agreement.
+
+algorithms and security protocols to safeguard the blockchain
+network.
+
+FIGURE 4. Abstract level architecture.
+
+C. DETAILED ARCHITECTURE
+This section describes every step of DevOps in detail with
+the implementation of Blockchain technology. The Detailed
+framework Architecture layer-wise of the system is shown in
+Figure 6.
+
+1) PROJECTION INITIATION
+The manager or owner can create the project at the project’s
+initiation. After creating a project, the manager/owner can
+add members to the project using data that include the Name,
+Username, Email, and Contact Number of developers. After
+that, all members will be given unique identity materials like
+a ‘‘Key.’’ Members can log in to the project using unique keys
+to do their tasks. All unique keys, along with members’ data
+and basic project details are uploaded on the blockchain using
+a smart contract.
+
+The owner ormanager will write all basic requirements and
+terms and conditions at the project’s initiation. Table 2 and 3 FIGURE 5. Layered architecture for distributed DevOps.
+show the JSON file for the agreement between the client and
+the organization.
+
+2) CONTINOUS DEVELOPMENT
+TABLE 2. File for customer agreement. In the context of DevOps, the continuous development phase
+
+refers to the process of continuously planning and coding.
+PLANNING: In this phase, the developer, managers, and
+
+all other stakeholders directly or indirectly involved in soft-
+ware development make a plan on how to complete the
+project successfully. Because the teams are located in dif-
+ferent locations, the planning can happen via online video
+calling platforms like Zoom or Google Meetings. All the
+details of the planning phase, like video conference record-
+ings and notes, can be stored in the IPFS because of
+Blockchain’s scalability issue [29]. The integration of IPFS
+
+All stakeholders need to accept the terms and conditions can be achieved by utilizing the IPFS Desktop App, which
+set by the other side to reach a consensus. After that, the data has a user-friendly interface for data uploading. After the data
+can be stored on the blockchain using a smart contract after is imported/uploaded, the app will generate a CID (Content
+the consensus is met between themanager/owner, developers, Identifier), also known as hash data/file which can be used to
+and clients. The complete work of the Project Initiation Phase locate the project file from anywhere in the world. Figure 8
+is shown in Figure 7. shows the uploaded project on the IPFS Desktop App along
+
+15494 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+with its generated CID. Subsequently, this returned hash file
+will be stored on the Blockchain like any other transaction
+data stored to enhance tamper-proofing and security, ensuring
+that it remains unalterable, as illustrated in Figure 9. This data
+is visible to all the stakeholders. In this way, anyone who can
+access details can see them but not change them. In traditional
+planning, there is no involvement of a secured and tamper-
+proof system, which makes the planning phase vulnerable
+to documents being deleted, manipulated, or tampered with,
+resulting in confusion and clashes between stakeholders.
+However, with Blockchain in place, the data can be securely
+stored.
+
+CODING: Git has been one of the most popular tools for
+distributed revision control systems [30] and is widely used in
+DevOps. However, the Interplanetary File System (IPFS) can
+be used as a decentralized version control system in software
+development [31]. IPFS provides a content-addressed version
+control system for managing files. With IPFS’s distributed
+storage, version control, and content addressing features,
+a decentralized and resilient file management system can be
+made that operates similarly to Git. However, it is important
+to note that IPFS cannot fully replicate Git. One such limi-
+tation is that IPFS does not support delta storage, meaning
+entire files rather than just the changes are stored, which
+can lead to performance inefficiencies in large projects. FIGURE 6. Framework architecture layered-wise.
+Additionally, IPFS requires manual management of version
+metadata and updates via the Interplanetary Naming System
+(IPNS), which can complicate workflows.While IPFS has the code review, unit testing, integration testing, and building an
+potential to replicate some of Git’s functionalities, additional executable package (e.g., WAR or JAR). Once the package
+tooling and interfaces are required to fully match Git’s fea- is built, it will be uploaded to a decentralized storage system
+tures and scalability. IPFS. The IPFS hash of the package, along with the results
+
+One approach to managing sensitive application property of the code review, unit tests, and integration tests, should
+files across different environments is to encrypt the CID be stored on the blockchain. This provides a transparent
+(Content Identifier) returned by IPFS before uploading it and immutable record of the file changes, and the testing
+to the blockchain and share the decryption key with only performed. If there is a code error during code review, unit
+the concerned person. This ensures both immutability and test, or integration testing, the system generates an alert that
+security, as the encrypted CID makes it difficult for unau- notifies all developers to remove the error in the code and
+thorized users to access sensitive data, which ensures privacy update the repo as soon as possible.
+for crucial files while still using the benefits of decentralized To enable continuous delivery, smart contracts are used.
+storage. A smart contract will be placed that automatically deploys
+
+the package to the server or cloud provider when certain
+3) CONTINOUS INTEGRATION AND DELIVERY conditions are met (e.g., passing all tests). The smart contract
+Continuous Integration (CI) and Continuous Delivery (CD) can also track the deployment process, ensuring that the
+are the main components of a DevOps workflow, enabling package is delivered correctly and providing an audit trail of
+teams to build, test, and deliver software quickly and reliably. the delivery.
+In this blockchain-based framework, CI/CD can be further The information on the executable file that should be stored
+enhanced by leveraging the immutability and transparency of on the blockchain is shown in Table 4.
+the blockchain. After the file is uploaded on the Blockchain, all developers
+
+To implement CI/CD, our framework is using an open- get notified about the file. The complete working of CI/CD is
+source tool, Jenkins. Jenkins is one of the most popular shown in Figure 10.
+automation tools for developers [32]. It is used to automate
+parts of the software development process, such as building, 4) CONTINOUS DEPLOYMENT
+testing, and releasing code changes. Continuous Deployment ensures the automatic release of
+
+In the proposed framework, whenever developers update code changes to the production environment [33].
+the repository, the code goes through the Jenkins server, Smart Contracts play a major role in implementing con-
+which performs a series of automated operations, including tinuous deployment in our proposed framework. Before
+
+VOLUME 13, 2025 15495
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+TABLE 4. Information of executable file. and accessed by all the relevant stakeholders securely and
+transparently.
+
+6) PAYMENTS PHASE
+The payment phase is a pivotal component of our frame-
+work, seamlessly enabled through the utilization of a Smart
+Contract. A smart contract can be defined as the algorith-
+mic description of a contractual transaction protocol that
+is automatically executed based on predefined rules and
+conditions [34].
+
+The integration of smart contracts with digital wallets can
+deploying the main file, the code has to go through a be done by the Web3 API. This API allows DApps to con-
+smart contract specifically created to check quality stan- nect to digital wallets, enabling users to interact with smart
+dards, security requirements, and compliance with regulatory contracts and participate in decentralized applications. In our
+requirements. The smart contract should be already integrated framework, the smart contract is triggered either upon the
+into the CI/CD pipeline to enforce the deployment criteria predefined completion of an iteration by the organization or
+specified in the contract. This can be done by creating a after a specified time interval. Upon successful verification,
+custom script or plugin that interacts with the contract or the smart contract initiates the release of payment, transfer-
+by using an existing blockchain integration tool. Once the ring funds from the Customer’s Wallet to the Stakeholder’s
+main file is deployed, the owners, managers, clients, and Wallet.
+developers are notified about this change. The status of this To facilitate this process, every stakeholder involved in the
+implemented functionality changes to ‘‘Deployed’’. project must possess a Digital Wallet. Payments can be made
+
+using various digital currencies such as ETH (Ethereum) or
+BTC (Bitcoin). Furthermore, stakeholders, including man-
+agers, developers, or testers, have the flexibility to convert
+these digital currencies to their local currencies, such as
+PKR, USD, or EUR, through cryptocurrency exchanges. The
+payment phase is illustrated in Figure 11.
+
+FIGURE 7. Project initialization.
+
+5) CONTINOUS MONITORING
+In this phase, all the metrics related to the performance and FIGURE 8. Data file.
+availability of the software and infrastructure components are
+recorded on the blockchain with the help of smart contracts. Timely payment by the client is crucial for the uninter-
+By recording these metrics on the blockchain, they become rupted progression of the project. The client is obligated
+immutable and secure. to fulfill the payment within the timeframe specified in the
+
+When a problem or alert is detected in the system, it will be smart contract failure to do so results in a holdup of further
+recorded on the blockchain with the help of a Smart Contract. work. On the contrary, in cases where iteration delays are
+In parallel, all the developers who are part of the DevOps attributable to developers, penalties are imposed as specified
+team will be notified about it immediately. This notification in the smart contract.
+ensures that the problem can be stored and then resolved as The payment requirements, penalties, and other relevant
+soon as possible, minimizing the impact on end-users. details are encoded in a smart contract, ensuring their
+
+To monitor the process, any preferred software can be immutability. The associated JSON objects for payment,
+used, such as Nagios, Splunk, Prometheus, etc. However, the customer’s penalty (in case of non-payment), and devel-
+software must be compatible with the blockchain framework oper’s penalty (in case of iteration delay) are mentioned in
+being used in the distributed DevOps environment. This can Tables 5, 6, and 7, respectively. This integrated approach,
+be done by creating a custom script or plugin. This ensures governed by a robust smart contract, guarantees transparency,
+that the monitoring data can be recorded on the blockchain security, and automation in the payment process.
+
+15496 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+Transactions on blockchains require fees to process. Few
+steps can be taken to manage the operational costs associated
+with payments. First, blockchain transaction fees, acquired
+for storing project details or test results, must be factored into
+the project budget. These costs can be managed by allocating
+a portion of the payment to cover such fees. Additionally,
+smart contract gas fees, which vary depending on network
+activity, can be mitigated by adopting layer-2 solutions like
+Polygon. Layer-2 solutions improve transaction processing
+rates, periods, and fees by minimizing the use of underlying
+slow and costly blockchains [35]. For decentralized storage
+via IPFS, only essential data can be stored on the blockchain
+to optimize costs, while larger files can be handled off-chain.
+By integrating these strategies, the frameworkmakes sure that
+operational costs are effectively managed, balancing security FIGURE 9. Continuous development phase.
+
+and cost efficiency. Table 5 shows the payment file method.
+Table 6 shows the customer penalty method and Table 7
+shows the developer’s penalty mechanism. 1) SCALABILITY CHALLENGES
+
+Despite utilizing IPFS to address the scalability challenge of
+TABLE 5. File for payment. Blockchain, this framework may still be susceptible to the
+
+growing number of transactions and project size. Continuous
+monitoring and optimization strategies will be vital to ensure
+sustained scalability, but they can also increase the cost of the
+overall project.
+
+2) IPFS LIMITATIONS
+While IPFS offers functionalities similar to Git, providing
+decentralized and secure version control, it does not incor-
+porate the complete range of Git’s functionalities. To address
+this, additional tooling and interfaces may be required for full
+replication of Git’s features within the proposed framework.
+
+TABLE 6. File for customer penalty (in case of no payment).
+
+3) INTEGRATION COMPLEXITY
+Integrating DevOps with Blockchain is a relatively new area
+of research, introducing potential difficulties and, in extreme
+cases, the possibility of unsuccessful integration. The lack of
+integration may prevent the framework from fully using the
+benefits of blockchain technology, thus limiting the scope
+of improvement. Robust integration strategies and collabo-
+ration with experienced professionals may be necessary to
+overcome this challenge.
+
+TABLE 7. File for developer’s penalty (In case of iteration delay). 4) SMART CONTRACTS
+Designing and deploying complex smart contracts that accu-
+rately capture the nuances of DevOps processes can be
+a daunting task. The complex nature of smart contracts
+increases the risk of errors, making the system challenging
+to maintain and implement. Implementing rigorous testing
+protocols and employing standardized smart contract devel-
+opment practices can help mitigate these complexities.
+
+D. IMPLEMENTATION CHALLENGES AND LIMITATIONS 5) USER ADOPTION AND TRAINING
+While our proposed framework offers innovative solutions to A key implementation challenge for this framework is the
+enhance traceability, security, and transparency in distributed introduction of a new system, which requires overcoming a
+DevOps, it’s crucial to acknowledge potential challenges and learning curve for team members and clients. Team mem-
+limitations in its implementation. These may include: bers and clients may find it challenging to adapt to new
+
+VOLUME 13, 2025 15497
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+technology; therefore, initiating comprehensive training pro-
+grams is an essential approach to mitigate this challenge.
+
+FIGURE 12. Chain size increase.
+
+is responsible for HTTP requests, specifically ‘GET’ and
+FIGURE 10. Continuous integration and delivery phase. ‘POST’, to interact with APIs. Table 8 shows each function’s
+
+name that is employed to evaluate the framework along with
+its purpose.
+
+TABLE 8. Functions and their purpose.
+
+A total of 500 blocks have been mined by sending HTTP
+requests. As depicted in Figure 12, the chain size consistently
+
+FIGURE 11. Payment process phase. increases with each blockmined. On average, the single block
+size is approximately 465B. Throughout the process, starting
+from the 1st block and continuing to the 500th block, the
+
+V. IMPLEMENTATION AND PERFORMANCE chain size has increased from 290B to 232 KB. The size of
+In this section, we have tested the efficiency of the framework the blockchain increased with each block primarily due to the
+to demonstrate its effectiveness in a real-world scenario. addition of new transactions and the block’s data structure.
+
+It is essential to highlight that mining each block’s latency
+A. PERFORMANCE ASSESSMENT (measured in milliseconds) appears to be random. There is
+To test the efficiency and performance of our proposedmodel, no visible pattern or significant correlation observed in the
+we utilized specific tools to implement and test a blockchain latency values. As shown in Figure 13, the latency fluctu-
+network. We employed Spyder IDE Version 5.4.1 for imple- ates from 12ms to 1359ms as 500 blocks are mined in the
+menting the blockchain in Python, and Postman Version blockchain.
+10.14.2 was utilized to test the network’s performance. Addi- This variability in latency suggests that the time taken to
+tionally, we have used the Python library Matplotlib for mine a block can differ significantly for each instance. Factors
+plotting graphs to do graphical representations of our results. such as network congestion, computational resources, and the
+
+complexity of the block being mined can contribute to these
+B. PERFORMANCE EVALUATION fluctuations. It is crucial to consider and analyze the latency
+In this section, we present the performance results of distribution to gain insights into the overall performance and
+our model in a real-world scenario. The Postman tool responsiveness of the blockchain network.
+
+15498 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+teams located in different locations. We have successfully
+addressed the challenges of trust and transparency that are
+often encountered in distributed settings.
+
+4) PAYMENT SOLUTIONS
+This framework also includes a payment solution, ensuring
+seamless and uninterrupted payment transactions after each
+process or iteration.
+
+Quantitative
+In this subsection, a quantitative analysis has been con-
+
+ducted comparing our extracted results with well-known
+blockchains such as Bitcoin, Ethereum, Cardano, etc. The
+results of this quantitative analysis highlight the efficiency
+of our framework and offer a clear understanding of the
+framework’s advantage in terms of speed. We are utilizing
+Block Time as a parameter for comparison, where Block
+
+FIGURE 13. Latency in mining the block. Time refers to the duration required to successfully mine a
+block in the blockchain.
+
+Conclusively, these evaluation results have provided valu-
+able insights into the behaviour of our proposed model in TABLE 9. Block time comparison.
+
+a real-world scenario. The evaluation of our model using
+specific tools and metrics has allowed us to better understand
+the efficiency and performance of the blockchain network.
+Further analysis and optimization can be pursued to enhance
+the overall reliability and responsiveness of the blockchain
+system.
+
+C. PRESENTED FRAMEWORK QUALITATIVE AND
+QUANTITATIVE ANALYSIS
+Qualitative
+
+In this subsection, we have presented a comprehensive
+quantitative comparison between our proposed framework
+for distributed DevOps and the related work that has been
+conducted in this domain. We have carefully examined Table 9 shows the Block Time comparison of our
+the existing literature and research efforts in the field of experiment with Bitcoin, Ethereum, Cardano, and Polkadot
+blockchain-based software engineering, taking into account blockchains, which are well-known blockchains to this date.
+the various aspects. By comparing our proposed framework The average Block Time of 0.25 seconds indicates that our
+with the related work, we aim to highlight the unique con- framework outperforms other blockchains.
+tributions and advantages offered by our approach. Table 1
+shows the comparison of our work with related work. VI. DISCUSSION
+
+In this section, the performance of our proposed frame-
+1) BLOCKCHAIN-BASED work is formally discussed. This framework is designed to
+The presented framework is based on blockchain, enabling facilitate the successful development of software projects
+secure, immutable, transparent, and traceable software with Distributed DevOps while maintaining decentraliza-
+development. tion, security, traceability, transparency, and coordination.
+
+The proposed framework addresses potential challenges and
+2) FRAMEWORK problems associated with Distributed DevOps, focusing on
+We have introduced a comprehensive framework that security, transparency, and traceability while enhancing coor-
+addresses the shortcomings of related work. The frame- dination and collaboration.
+work demonstrates the successful execution of each step in The performance results along with the proposed frame-
+DevOps. work demonstrate that combining Blockchain technology
+
+with Distributed DevOps can resolve many problems that
+3) DISTRIBUTED DEVOPS may lead to project failures, delays, and financial losses.
+This study focuses specifically on distributed DevOps, a rel- The integration of Blockchain with Distributed DevOps
+atively new software development technique that involves offers several benefits, including:
+
+VOLUME 13, 2025 15499
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+• Increased project decentralization. gains over time. Addressing these limitations will require
+• Enhanced collaboration between development teams further research and development focused on optimizing
+and operations teams in a secure and transparent envi- blockchain performance and reducing implementation costs.
+ronment because the blockchain keeps a record of By overcoming these challenges, the proposed framework
+transactions and is capable of preventing 51% of attacks. can be made more scalable and accessible to a wider range
+
+• Elimination of payment-related issues when teams are of organizations.
+distributed across different locations. Moreover, in conclusion, the findings of this research
+
+• Improved client satisfaction is achieved through highlight the significant potential of Blockchain, a major
+increased transparency provided by Blockchain, lever- technological advancement, to revolutionize software
+aging its ability to track and trace information. development.
+
+• Improved efficiencywith an average time of 0.25 seconds
+for adding one block on the blockchain which is far VII. CONCLUSION AND FUTURE WORK
+better compared to renowned blockchains like Bitcoin, The current distributed DevOps for software development
+Ethereum, Cardano, and Polkadot. needs more security, data protection, privacy, transparency,
+
+• Enhanced security for all stakeholders, enabling them to and traceability. These shortcomings are why the opera-
+work in a secure environment. tions and development teams need help working together
+
+• The utilization of Blockchain technology is a useful tool properly in a distributed environment. That is why this pro-
+for tracking work progress and maintaining records. posed model will allow the collaboration of development
+
+• Decreased risk of conflicts and errors by implementing and operation teams more smoothly. The framework utilizes
+Blockchain with distributed DevOps, thereby facilitat- smart contracts and a decentralized architecture to enable
+ing smoother collaboration on complex projects. secure and efficient collaboration among distributed teams
+
+Overall, our research work proves that implementing in the development and operations of software systems.
+Blockchain technologywith DistributedDevOps can increase We discussed the benefits of using blockchain technology in
+security, transparency, and traceability in software develop- DevOps, such as increased transparency, enhanced traceabil-
+ment. Although previous studies have been conducted in this ity, improved collaboration, and increased efficiency.We also
+area, none have specifically addressed Distributed DevOps. presented the performance results, which demonstrated the
+Our study fills this gap by presenting an efficient approach effectiveness of the proposed framework in a real-world
+to software development with CI/CD when teams are located scenario.
+worldwide. The proposed framework offers a promising solution for
+
+Despite the benefits of utilizing blockchain in the proposed addressing the challenges of Distributed DevOps, and there
+framework, it is important to acknowledge the drawbacks is a lot of potential for further research and development.
+associated with this technology. One such drawback could For example, one potential research area is to explore the
+be technology failure. If any failure occurs, the responsibility integration of this framework with other emerging technolo-
+will depend upon the specific blockchain implementation. gies, such as Artificial Intelligence and Machine Learning,
+For public blockchains, responsibility is decentralized and to automate certain tasks in Distributed DevOps, such as
+shared among participants of a network. In contrast, in private automating testing, improving resource management, or pre-
+or consortium blockchain, the responsibility lies with the dicting potential risks. Another research direction could
+organization or entity managing the network. Also, in case involve implementing this framework in different organi-
+of Smart Contract vulnerabilities, the development team zations and regions to assess its feasibility in real-world
+or governance body is accountable. Another drawback is scenarios. Understanding the practical pros and cons through
+the potential for slower data processing speeds compared implementation can unlock additional research directions.
+to traditional databases. This stems from the decentralized Overall, the proposed framework provides a promising
+and consensus-based nature of blockchain, which intro- solution for enhancing trust, traceability, security, and trans-
+duces additional steps and computational overhead that can parency of Distributed DevOps.
+impact data throughput. While DevOps processes can be Several directions for future work can be pursued based
+streamlined overall, the time required for data uploading on the proposed framework. One potential area of research is
+or loading may increase due to these factors. Another key to investigate this framework with other emerging technolo-
+limitation is the implementation cost of the proposed frame- gies, such as Artificial Intelligence and Machine Learning,
+work. The complexity of blockchain technology and the to enhance its capabilities and automation. Additionally,
+associated infrastructure requirements can lead to significant it will be interesting to study the real-world adoption and
+expenses [40], particularly for organizations operating on usage of the framework by different organizations and
+limited budgets. This cost barrier may hinder the adoption industries. Furthermore, there is also a scope to explore
+of the framework, especially for companies with resource the regulatory compliance aspect of the framework and
+constraints. its adoption in different geographical regions. Inclusively,
+
+However, the potential benefits, such as increased security, the proposed framework provides a promising solution for
+transparency, trust, and traceability, could result in substantial addressing the challenges of Distributed DevOps, and there
+
+15500 VOLUME 13, 2025
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+is much potential for further research and development in this [19] P. Nayaka Sheetakallu Krishnaiah, D. L. Narayan, and K. Sutradhar,
+area. ‘‘A survey on secure metadata of agile software development process
+
+using blockchain technology,’’ Secur. Privacy, vol. 7, no. 2, Mar. 2024,
+Art. no. e342, doi: 10.1002/spy2.342.
+
+REFERENCES [20] A. Al-Nakeeb, M. E. Khatib, S. AlHarmoodi, M. Salami, H. Al Shehhi,
+A. Al Naqbi, M. Al Nuaimi, and H. M. Alzoubi, ‘‘Digital transformation
+
+[1] L. Leite, C. Rocha, F. Kon, D. Milojicic, and P. Meirelles, ‘‘A survey of and disruptive technologies: Effect of cloud computing and devops on
+DevOps concepts and challenges,’’ ACM Comput. Surv., vol. 52, no. 6, managing projects,’’ in Technology Innovation for Business Intelligence
+pp. 127:1–127:35, Nov. 2019, doi: 10.1145/3359981. and Analytics (TIBIA): Techniques and Practices for Business Intelligence
+
+[2] M. Gall and F. Pigni, ‘‘Taking DevOps mainstream: A critical review and Innovation, H. M. Alzoubi, M. T. Alshurideh, and S. Vasudevan, Eds.,
+conceptual framework,’’ Eur. J. Inf. Syst., vol. 31, no. 5, pp. 548–567, Cham, Switzerland: Springer, 2024, pp. 39–62, doi: 10.1007/978-3-031-
+Sep. 2022, doi: 10.1080/0960085x.2021.1997100. 55221-2_3.
+
+[3] E. Diel, S. Marczak, and D. S. Cruzes, ‘‘Communication challenges and [21] S. Terzi and I. Stamelos, ‘‘Architectural solutions for improving trans-
+strategies in distributed DevOps,’’ in Proc. IEEE 11th Int. Conf. Global parency, data quality, and security in eHealth systems by designing
+Softw. Eng. (ICGSE), Aug. 2016, pp. 24–28, doi: 10.1109/ICGSE.2016.28. and adding blockchain modules, while maintaining interoperability: The
+
+[4] Deloitte Luxembourg. DevOps in a Distributed World and New Ways of eHDSI network case,’’ Health Technol., vol. 14, no. 3, pp. 451–462,
+Working | Deloitte Luxembourg | Blog. Accessed: Nov. 21, 2023. [Online]. May 2024, doi: 10.1007/s12553-024-00833-y.
+Available: https://www2.deloitte.com/lu/en/pages/risk/articles/devops-in- [22] J. N. Qureshi and M. S. Farooq, ‘‘ChainAgile: A framework for the
+a-distributed-world-and-new-ways-of-working.html improvement of scrum agile distributed software development based on
+
+[5] (2016). Kharnagy, English: Illustration Showing Stages in a blockchain,’’ PLoS ONE, vol. 19, no. 3, Mar. 2024, Art. no. e0299324,
+DevOps Toolchain. Accessed: Nov. 20, 2023. [Online]. Available: doi: 10.1371/journal.pone.0299324.
+https://commons.wikimedia.org/wiki/File [23] M. S. Farooq, Z. Kalim, J. N. Qureshi, S. Rasheed, and A. Abid,
+
+[6] S. Shrivastava and H. Date, ‘‘Distributed agile software development: A ‘‘A blockchain-based framework for distributed agile software
+review,’’ J. Comput. Sci. Eng., vol. 1, no. 1, pp. 10–17, Jun. 2010. development,’’ IEEE Access, vol. 10, pp. 17977–17995, 2022, doi:
+
+[7] A. A. Khan and M. Shameem, ‘‘Multicriteria decision-making taxon- 10.1109/ACCESS.2022.3146953.
+omy for DevOps challenging factors using analytical hierarchy process,’’ [24] S. Vimal and S. K. Srivatsa, ‘‘A new cluster P2P file sharing system
+J. Softw., Evol. Process, vol. 32, no. 10, Oct. 2020, Art. no. e2263, doi: based on IPFS and blockchain technology,’’ J. Ambient Intell. Humanized
+10.1002/smr.2263. Comput., vol. 10, pp. 1–7, Sep. 2019, doi: 10.1007/s12652-019-01453-5.
+
+[8] A.W. Khan, S. Zaib, F. Khan, I. Tarimer, J. T. Seo, and J. Shin, ‘‘Analyzing [25] A. Gómez, C. Joubert, and J. Cabot, ‘‘Blockchain technologies in the
+and evaluating critical cyber security challenges faced by vendor orga- design and operation of cyber-physical systems,’’ in Digital Transforma-
+nizations in software development: SLR based approach,’’ IEEE Access, tion: Core Technologies and Emerging Topics From a Computer Science
+vol. 10, pp. 65044–65054, 2022, doi: 10.1109/ACCESS.2022.3179822. Perspective, B. Vogel-Heuser and M. Wimmer, Eds., Berlin, Germany:
+
+[9] M. J. Hossain Faruk, M. Tasnim, H. Shahriar, M. Valero, A. Rahman, and Springer, 2023, pp. 223–243, doi: 10.1007/978-3-662-65004-2_9.
+F. Wu, ‘‘Investigating novel approaches to defend software supply chain [26] G. A. Oliva, A. E. Hassan, and Z. M. Jiang, ‘‘An exploratory study of
+attacks,’’ in Proc. IEEE Int. Symp. Softw. Rel. Eng. Workshops (ISSREW), smart contracts in the Ethereum blockchain platform,’’ Empirical Softw.
+Oct. 2022, pp. 283–288, doi: 10.1109/ISSREW55968.2022.00081. Eng., vol. 25, no. 3, pp. 1864–1904, May 2020, doi: 10.1007/s10664-019-
+
+[10] S. Maro, J.-P. Steghöfer, P. Bozzelli, and H. Muccini, ‘‘TracIMo: A 09796-5.
+traceability introduction methodology and its evaluation in an agile devel- [27] M. Andoni, V. Robu, D. Flynn, S. Abram, D. Geach, D. Jenkins,
+opment team,’’ Requirements Eng., vol. 27, no. 1, pp. 53–81, Mar. 2022, P. McCallum, and A. Peacock, ‘‘Blockchain technology in the
+doi: 10.1007/s00766-021-00361-5. energy sector: A systematic review of challenges and opportunities,’’
+
+[11] A. G. Gad, D. T. Mosa, L. Abualigah, and A. A. Abohany, ‘‘Emerging Renew. Sustain. Energy Rev., vol. 100, pp. 143–174, Feb. 2019, doi:
+trends in blockchain technology and applications: A review and outlook,’’ 10.1016/j.rser.2018.10.014.
+J. King Saud Univ.-Comput. Inf. Sci., vol. 34, no. 9, pp. 6719–6742, [28] I. K. Moutsatsos, I. Hossain, C. Agarinis, F. Harbinski, Y. Abraham,
+Oct. 2022, doi: 10.1016/j.jksuci.2022.03.007. L. Dobler, X. Zhang, C. J. Wilson, J. L. Jenkins, N. Holway, J. Tallarico,
+
+[12] Y. Lu, ‘‘The blockchain: State-of-the-art and research challenges,’’ J. Ind. and C. N. Parker, ‘‘Jenkins-CI, an open-source continuous integration sys-
+Inf. Integr., vol. 15, pp. 80–90, Sep. 2019, doi: 10.1016/j.jii.2019.04.002. tem, as a scientific data and image-processing platform,’’ SLAS Discovery,
+
+[13] A. D. John William, S. Rajendran, P. Pranam, Y. Berry, A. Sreedharan, vol. 22, no. 3, pp. 238–249, Mar. 2017, doi: 10.1177/1087057116679993.
+J. Gul, and A. Paul, ‘‘Blockchain technologies: Smart contracts for con- [29] D. Yang, C. Long, H. Xu, and S. Peng, ‘‘A review on scalability of
+sumer electronics data sharing and secure payment,’’ Electronics, vol. 12, blockchain,’’ in Proc. 2nd Int. Conf. Blockchain Technol., New York, NY,
+no. 1, p. 208, Jan. 2023, doi: 10.3390/electronics12010208. USA, May 2020, pp. 1–6, doi: 10.1145/3390566.3391665.
+
+[14] S. Bankar and D. Shah, ‘‘Blockchain based framework for [30] D. Spinellis, ‘‘Git,’’ IEEE Softw., vol. 29, no. 3, pp. 100–101, May 2012,
+software development using DevOps,’’ in Proc. 4th Biennial Int. doi: 10.1109/MS.2012.61.
+Conf. Nascent Technol. Eng. (ICNTE), Jan. 2021, pp. 1–6, doi: [31] N. Nizamuddin, K. Salah, M. Ajmal Azad, J. Arshad, and M. H. Rehman,
+10.1109/ICNTE51185.2021.9487760. ‘‘Decentralized document version control using Ethereum blockchain
+
+[15] M. A. Akbar, S. Mahmood, and D. Siemon, ‘‘Toward effective and and IPFS,’’ Comput. Electr. Eng., vol. 76, pp. 183–197, Jun. 2019, doi:
+efficient DevOps using blockchain,’’ in Proc. Int. Conf. Eval. Assess- 10.1016/j.compeleceng.2019.03.014.
+ment Softw. Eng., New York, NY, USA, Jun. 2022, pp. 421–427, doi: [32] J. Hembrink and P.-G. Stenberg. (2013).Continuous IntegrationWith Jenk-
+10.1145/3530019.3531344. ins Coaching of Programming Teams (EDA 270). Accessed: Nov. 21, 2023.
+
+[16] F. Tariq and R. Colomo-Palacios, ‘‘Use of blockchain smart contracts [Online]. Available: https://www.semanticscholar.org/paper/Continuous-
+in software engineering: A systematic mapping,’’ in Computational Sci- Integration-with-Jenkins-Coaching-of-(-)-Hembrink-
+ence and Its Applications-ICCSA (Lecture Notes in Computer Science), Stenberg/49ab2ff1a056c2d7ee114a7ba20fa0372863a56e
+S. Misra, O. Gervasi, B. Murgante, E. Stankova, V. Korkhov, C. Torre, A. [33] M. Yashwanth, S. Krishna, and S. K. Gawre, ‘‘MLOps for enhancing the
+M. A. C. Rocha, D. Taniar, B. O. Apduhan, and E. Tarantino, Eds., Cham, accuracy of machine learning models using DevOps, continuous integra-
+Switzerland: Springer, 2019, pp. 327–337, doi: 10.1007/978-3-030-24308- tion, and continuous deployment,’’ Res. Rep. Comput. Sci., vol. 2, no. 3,
+1_27. pp. 97–103, Jun. 2023, doi: 10.37256/rrcs.2320232644.
+
+[17] M. J. H. Faruk, S. Subramanian, H. Shahriar, M. Valero, X. Li, [34] K. Hu, J. Zhu, Y. Ding, X. Bai, and J. Huang, ‘‘Smart contract engineer-
+and M. Tasnim, ‘‘Software engineering process and methodology in ing,’’ Electronics, vol. 9, no. 12, p. 2042, Dec. 2020, doi: 10.3390/electron-
+blockchain-oriented software development: A systematic study,’’ in Proc. ics9122042.
+IEEE/ACIS 20th Int. Conf. Softw. Eng. Res., Manage. Appl. (SERA), [35] A. Gangwal, H. R. Gangavalli, and A. Thirupathi, ‘‘A survey of layer-
+May 2022, pp. 120–127, doi: 10.1109/SERA54885.2022.9806817. two blockchain protocols,’’ J. Netw. Comput. Appl., vol. 209, Jan. 2023,
+
+[18] N. S. G. R. Ramakrishna, ‘‘Blockchain in agile software development,’’ Art. no. 103539, doi: 10.1016/j.jnca.2022.103539.
+in ICT for Competitive Strategies. Boca Raton, FL, USA: CRC Press, [36] Vocabulary-Bitcoin. Accessed: Nov. 21, 2023. [Online]. Available:
+2020. https://bitcoin.org/en/vocabulary
+
+VOLUME 13, 2025 15501
+
+
+
+J. Nasir Qureshi et al.: Exploring the Integration of Blockchain and Distributed DevOps
+
+[37] Ethereum.org. Blocks. Accessed: Nov. 21, 2023. [Online]. Available: USMAN ALI received the M.Phil. degree in
+https://ethereum.org software engineering from the University of
+
+[38] Time Handling on Cardano. Accessed: Nov. 23, 2023. [Online]. Available: Management and Technology, Lahore.
+https://docs.cardano.org/explore-cardano/time/ He is currently a Lecturer with the University
+
+[39] Polkadot Parameters? Polkadot Wiki. Accessed: Nov. 23, 2023. [Online]. of Management and Technology. He has published
+Available: https://wiki.polkadot.network/docs/maintain-polkadot- many peer-reviewed international journals and
+parameters conference papers. His research interests include
+
+[40] K. W. Prewett, G. L. Prescott, and K. Phillips, ‘‘Blockchain adoption is artificial intelligence, machine learning, and deep
+inevitable—Barriers and risks remain,’’ J. Corporate Accounting Finance, learning.
+vol. 31, no. 2, pp. 21–28, Apr. 2020, doi: 10.1002/jcaf.22415.
+
+ADEL KHELIFI (Senior Member, IEEE) received
+the Ph.D. degree from the Engineering School of
+
+JUNAID NASIR QURESHI received the M.Phil. High Technology, Canada, in 2005.
+degree in computer science from the University of He is currently an Associate Professor with
+Management and Technology, Lahore, where he is Abu Dhabi University. Previously, he was the
+currently pursuing the Ph.D. degree. Dean of computer information technology with
+
+He is an Assistant Professor with Bahria Uni- American University in the Emirates, Dubai,
+versity, Lahore Campus. He has almost 15 years United Arab Emirates. He has extensive knowl-
+of experience in industry and academia. He has edge and experience. He is driving the open-source
+published many peer-reviewed international jour- software paradigm in the region. He has an impres-
+nals and conference papers. His research interests sive career, having worked as a Lecturer with the Engineering School of
+include agile software development, databases, Technology, Canada; the United Nations MSF, Canada; the Ministry of
+blockchain, and education. Citizenship and Immigration, Canada; and the Ministry of Finance, Tunisia.
+
+He is a Canadian ISO Member of Software Engineering. He is ABET PEV
+and is passionate about archaeology.
+
+MUHAMMAD SHOAIB FAROOQ was an ZABIHULLAH ATAL received the master’s degree
+Affiliate Member of George Mason University, in information technology from VU University,
+USA. He is currently a Professor of artificial Pakistan. He is currently an Assistant Professor
+intelligence with the University of Management with the Computer Science Department, Kardan
+and Technology, Lahore. He possesses more than University, Afghanistan. His research interests
+28 years of teaching experience in the field include computer networks and information secu-
+of computer science. He has published many rity, the IoT, machine, and neural networks. He is
+peer-reviewed international journals and confer- also interested in smart grid applications and tech-
+ence papers. His research interests include the nologies, cloud computing, distributed systems,
+theory of programming languages, big data, the and blockchain.
+
+IoT, the Internet of Vehicles, machine learning, blockchain, and education.
+
+15502 VOLUME 13, 2025

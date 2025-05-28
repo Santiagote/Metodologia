@@ -1,0 +1,872 @@
+﻿Received June 22, 2021, accepted July 8, 2021, date of publication July 12, 2021, date of current version July 20, 2021.
+Digital Object Identifier 10.1109/ACCESS.2021.3096663
+
+Role of Critical Success Factors in Offshore
+Quality Requirement Change
+Management Using SLR
+JAMSHED AHMAD1, ABDUL WAHID KHAN 1, AND HABIB ULLAH KHAN 2
+1Department of Computer Science, University of Science and Technology Bannu, Bannu 28100, Pakistan
+2Department of Accounting and Information Systems, College of Business and Economics, Qatar University, Doha, Qatar
+
+Corresponding author: Habib Ullah Khan (habib.khan@qu.edu.qa)
+
+This publication was supported by Qatar National Library, Doha, Qatar and Qatar Foundation Grant No. UREP27-020-1-003.
+
+ABSTRACT In software engineering field, requirement change management is a challenging job. Ignoring
+incoming changes results in customer displeasure. It may also result in late product transportation. Managing
+requirement changes in poor way is the main cause of product failure. It has more diverse effect in global
+software outsourcing. In software quality requirement change management, it is necessary to address success
+factors in order to accomplish the requirements of the customers. In this paper, systematic literature review
+approach is used for documentation and scrutinization of success factors. Total sixteen success factors were
+recognized having great impact on quality software requirement change management. Our identified success
+factors like ‘Proper Requirement Change Management’, ‘Rapid Delivery’, ‘Quality Software Product,
+Access toMarket’, ‘Project Management’, ‘Skills andMethodologies’, ‘LowCost/Effort Estimation’, ‘Clear
+Plan and Road Map’, ‘Agile Processes’, ‘Low Labor Cost’, ‘User Satisfaction’, ‘Communication/Close
+Coordination’, ‘Proper Scheduling and Time Constraints’, ‘Frequent Technological Changes’, ‘Robust
+Model’, ‘Geographical juncture/Cultural differences’ are the crucial factors that affect software quality
+requirement change. Company size and different database have been used for the analysis of success factors.
+The databases/search engine used are Google scholar, Science Direct, IEEE Explore and Springer for the
+exploration of success factors. Companies are analyzed on the basis of their size such as small, medium and
+large.
+
+INDEX TERMS Offshore software development, requirement change management, systematic literature
+review, success factors and vendor.
+
+I. INTRODUCTION discounted requirements, undeveloped technologies, unex-
+OSDO (offshore software development outsourcing) aims on pected problems, essential changes, misplaced stakeholders,
+developing low priced product in low waged countries [1]. excessively optimistic budget or schedule, boundary not ade-
+Software outsourcing is a business base on agreements quately defined, changing needs, wholly products lifecycle
+between vendor organizations and clients. Vendor organiza- phases not addressed [3].
+tions returned services to the clients after receiving desired We need requirement changes because some people have
+compensations [2]. no idea what is their wish unless they utilize it. There
+
+For organizational survival, it is compulsory to develop the are different types of requirement change. These are reac-
+system. For development, it is mandatory to make changes tive change, happened change, preventive change, incremen-
+in organizational structure and policies [3]. Question is why tal change, planned change, operative change, calculated
+quality requirements are changing? Requirements are chang- change, central change, turning change and entire change [4].
+ing due to ill-defined requirement development procedure, Managing quality requirement change in offshore devel-
+
+opment is a thought-provoking task because analysis of
+The associate editor coordinating the review of this manuscript and whole system change is more challenging which has negative
+
+approving it for publication was Easter Selvan Suviseshamuthu . impact on business process [5]. There are certain factors
+
+99680 This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/ VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+who effect system requirement change. These factors are:
+Quality Software Product, Skills and Methodologies, Low
+Cost/Effort Estimation, Structural differences, Component
+Model, close communications, Market access, management
+methods etc. [6].
+
+In business environment, change in quality requirement is
+a key challenge. Business environment is closely related to
+customer wishes and technological change [7]. There must
+be quality requirement change management techniques in
+order to achieve business goals and objectives. When there
+come requirement changes from customer side, Requirement
+change management fulfils this demand [8]. High quality FIGURE 2. Past project management report.
+
+requirements measurement results in high quality system at
+the last stage of development. A product with high quality
+requirement must possess the qualities of wholeness, unam-
+biguity, reliable, precision, feasibleness, traceable, demon-
+strable and changeable [4]. Mutual understanding among
+stakeholders in necessary for successful implementation of
+RCM techniques [9], [10]. Implementing RCM techniques
+without planning results in high cost products and project
+delays [5]. Worrying thing about RCM is the shortfall in
+telling and recognizing requirements change. Classifying
+requirement change management (RCM) challenges helps
+in showing road map to researchers for finding solution
+of a particular problem. RCM is a significant technique in
+prerequisite engineering and reflective consideration of its
+procedure is a principal success factor to install change in
+requirements [3]. It is believed that quality of a product
+depends on quality of a process. it is therefore needed to FIGURE 3. Requirement factors impacting project failure.
+manage requirement changes through RCM process [11].
+Software requirement changes are happening due to: vari-
+ations in customer requirements, refining in functionalities, Another survey conducted by Standish group based in USA
+and shift in managerial policy, variation in road map, incom- reports that the main factor behind project failure is the miss
+plete requirements, eliminating redundancy and revealing managed requirements. What types of requirements we may
+requirements [3]. Fig. 1 shows RCM process details [1]. face during project management? These are as mentioned
+
+in Figure 3 are: requirements with no use, absence of proper
+scheduling, variation in requirements, no role of management
+support, impractical expectations, lack of capitals, low cus-
+tomer involvement and incomplete requirements as depicted
+in the this Figure [2].
+
+In the Fig. 3, it is clear that most important factor having
+negative impact on project failure is the incomplete require-
+ments of ration13.1%. The other most important factor is the
+low customer involvement of percentage ratio 12.4.
+
+Global software development (GSD) is a platform in which
+different skilled persons sit at different places remotely with
+
+FIGURE 1. RCM process.
+different culture and time zone differences and exchange their
+
+Research shows that when software projects requirements views for preparing business product in order to satisfy end
+are not handled in a right manner, it plays a primary role in users [3]. Distributed software development is a challenging
+project failure. A report published by Standish group says platform.
+that there are three main cause of project failure. These are: Software requirement change management is a key chal-
+no role of customers input, variation in requirements. Past lenge among these. It is more challenging in GSD per-
+presentation report in the eyes of Standish Group of CHAOS spective. Global software development face more hurdles
+Survey is in Fig. 2 [2]. as compare to single-site development in terms of manage-
+
+From the diagram, it is clear that the main factor ment and technicality [4]. Achieving high valued product
+behind project failure is the poor requirement management. in the eyes of end users is the main objective of today’s
+
+VOLUME 9, 2021 99681
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+business environment. Requirement change in the shape of RQ2. What types of most critical success factors that
+functional requirement or non-functional requirement will be should be considered by vendors’ organization in quality
+fulfilled [5]. This process is not free from tension. Because requirement change management software development?
+business experts in quality outsourcing requirement change RQ3. Do the recognized success factors, as acknowledged
+belong from different culture, different time zones, mis- in the literature, vary from company to company size?
+communications remotely and organizational problems [6]. RQ4. Do the recognized success factors, as identified in
+Distributed teams are facing hurdles linked to coordination, the study, change from search engines/database to search
+differences in time zone, differences in culture, and infor- engines/database?
+mation supervision [7]. But dispersed teams, different time RQ5. Do the recognized success factors, as identified in
+zones and variance in culture have a meaningful influences the study, change from decade to decade?
+on communication and project success [8]. We have found through literature review that quality
+
+There have been developed so many models and tech- change management is the critical issue in software develop-
+niques in offshore quality requirement change management. ment and maintenance. Most of the software contract failed
+These models and techniques overcome the challenges being due to poor requirement change management. Our study
+faced by vendor organizations in quality requirement change focus on to bridge this gap. This paper is one component
+management process. A model developed by Akbar [9] tells of our proposed model that will assist vendor organization
+about the different process of requirement change manage- to gauge their status for quality requirement change manage-
+ment about initial stage, its calculations and variation in last ment in context of quality software development.
+stage of product development. Main goal of this model is The rest of the paper is planned as: unit two consists
+how to keep focus on success factors like time constraints, of Background and Motivation. Unit three consists of Sys-
+cost issue in quality requirement change management in tematic literature review (SLR). In section 4, result of our
+the direction of RCM. A model called change management research work is shown. Section 5 consists on discussion.
+process model(CMPM) was introduced by Bhatti [10]. Main Section 6 is about study limitations. In section 7, Conclusion
+focus of this model is on how requirement change manage- and Future work has been mentioned.
+ment activities ae going on? Disadvantages of this model
+is that it does not focus on verification segment. Another II. BACKGROUND AND MOTIVATION
+model called Ince’s RCM model. This model handles main Requirement change management working closely on deliv-
+activities of quality requirement change management. when ering quality product to end user. It has scale for prioritizing
+there comes change from customers’/end users side, it will customers wish and trying to fulfill each and customer’s
+be transferred to change control board (CCB). These changes wish [13]. Unless there is not a change concept in a business
+are verified/clarified in CCB with cooperation all six stages organization, it can’t achieve it milestone. Nurmuliani [14] is
+(this model has six stages). Its weak point comes as it ignores of the view that quality requirements are changing because a
+coordination factor in communication between clients and change comes from customer wishes, market change, policy
+vendor organizations. Although the above mentioned mod- change and variation in products’ quality. Linquist [14] is of
+els giving valuable guidelines in managing quality require- the view that nearly half of the business activities fail due to
+ment change. And tying to prepare top quality product for unplanned RCM activities. Sirvio and Tihinen [15] also think
+end users satisfactions [3]. But managing quality require- same by saying that 40% business process fails by not apply-
+ment change globally is not an easy task [11]. Most of ing well-structured RCM techniques. Most research work in
+business sites ae spread worldwide. Role of RCM activi- the form of different models and framework have been done
+ties in GSD platform cannot be denied. Very few studies in order to handle issues related to quality requirement change
+have been shown in resolving RCM concerns [3]. No SLR management [8]. But their contributions were only related to
+strategy has been formulated for examining success fac- problems related to specific software product [16].
+tors having constructive impression on requirement change How can we development software quality requirements
+management processes in global software development and for what purpose we develop it? Purpose of soft-
+stage [12]. ware requirement is to study different developed require-
+
+The main objective of this study is to categorize the suc- ments [17]. This scenario is best described in the following
+cess factors having positive influence on quality requirement diagram.
+change management process in GSD platform. This paper In the Figure 4, it is showed that software requirements can
+also observes different stages of a business product in the be developed and updated when customer wishes and will are
+respect of quality requirement change management. We have fulfilled. Change in business scenario, change in skills and
+formulated the following research questions to adjust our tools can positively impact on requirement development. Raw
+claim. requirements are unstructured requirements, and they are
+
+RQ1. What types of success factors that should be consid- not yet defined in a well manner. After receiving comments
+ered by vendors’ organization in quality requirement change from customers, they are further furnished. At last they are
+management software development? transformed into full-fledged requirements.
+
+99682 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+The above frameworks and models help when there comes
+a requirement change in situation of insourcing (not out-
+sourced). In Model called requirement change management
+for global environment (GRCM) helps when sudden change
+is needed in global software development paradigm. But
+weak point is that no facilitated tool was proposed for com-
+munication and coordination. It only touches predevelopment
+stage [25]. Another model developed by Kumar and Kumar
+for handling issues of requirement changemanagement. weak
+point is that the nature of communication is not clearly
+defined [26]. Another model developed by Rabia fulfils and
+handles all issues of RCM activities. Weak point is that the
+model is not yet validated [26]. Another framework devel-
+oped by Khan et al. addresses all the activities of RCM
+activities especially in global software development. But this
+framework does not addresses the culture and language bar-
+riers [27]. Lai presented a framework called ontology based
+requirement repository. In this framework quality require-
+ment change management is dealing in GSD environment.
+But the process of quality requirement change management
+
+FIGURE 4. Development of requirements.
+is complete and not mentioned clearly [18]. Sinha et al. [3]
+developed a tool called EGRET in requirement change man-
+
+Research work in the field of quality requirement change agement. Its weak point is that change in time shape not
+management has less contributions for developing standards clearly addressed. It will result in rework. Another frame-
+and models particular in the field of GSD [2]. Lai et al. [18] work proposed by Minhas et al. [28] for requirement change
+and Ramadan [19] are of the view that no attention has management covers nearly all activities in global requirement
+been given for preparing standard tools in quality require- change management. But culture and time success factors
+ment change management in GSD environment. In GSD are not addressed. These success factors should be han-
+environment, dispersed cites create more problem in business dled for the smooth running of global business activities.
+situation. It is a worse situation for business experts to sur- Heindl et al. [29] proposed an approach called requirement
+vive in today’s business and technological competition [8]. tracing based approach. This approach is used for tracing
+Researchers in the field of GSD business environment, has requirement change by totaling stakeholders’ assessment.
+paid less attention to the role of success factors having posi- Although this approach is used for requirement traceabil-
+tive effect of quality Requirement Change Management [20]. ity for handling GSD issues. But it does not address most
+
+of the hurdles like culture awareness, time constraints and
+A. REQUIREMENT CHANGE MANAGEMENT coordination issues. Details of further different RCM models
+PROCESS MODELS and differences among them are mentioned in the following
+A change management model developed by Minhas and Table 1 [19].
+Zulfiqar for managing requirement change in single site. Change implementation is absent in Dean Leffingwell and
+But it has no role to manage changes in GSD environment. Widrig model [30]. No testing facilities is present. So it will
+Another framework of RCM model proposed by Akbar [21] be difficult to checkwhether business activities are goingwell
+covers all stages of change management but no road map and smoothly or not. When there comes a future change plan,
+of change in GSD environment. A framework developed by no such facilities are present here. Who has requested for
+Niazi et al. [22] to instrument a special practice of CMMI change, will not be answered.
+model also does not deal with communication and coor- In V-like model [31], there is no concept of budget and
+dination happenings in global software development envi- resource management. When there comes change in require-
+ronment. Another change management model designed for ments. When there are no budget and resources, it will
+small and medium sized organization by Keshta et al. [23]. be difficult to implement. Like Ice’s model, Spiral model
+This model has no role in large and distributed organiza- also does not focus on decision making in business process
+tions. Another model called formal RCM model developed development process. No testing facilities are provided [32].
+by Bhatti et al. [10] addresses all the significance changes but Simon Lockmodel has no role when there comes requirement
+silent in verification stage. Ice’s model also addresses nearly change in initial stage. Although research work on empirical
+all stages of RCM activities. But it also does not focus on studies to classify success factors has been done in GSD envi-
+verification segment in GSD environment [24]. This model ronment [6]. But has failed to classify success factors having
+is completely silent in decision making in bringing change. positive effect on quality requirement change management
+Who will perform the business activities is also missing? in GSD business scenario. Success factors identified in this
+
+VOLUME 9, 2021 99683
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 1. Comparison of different RCM models.
+
+99684 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+research work help GSD engineers to identify, schedule and
+achieve quality requirement change in GSD environment.
+
+III. SYSTEMATIC LITERATURE REVIEW
+To identify success factors in software outsourcing qual-
+ity requirement change management, we have taken help
+from systematic literature review(SLR) [33]. So many other
+researchers have also taken advantages from thismethod [34].
+SLR is diverse from OLR in that it shadows systematic
+protocol. Systematic literature review helps in collecting rel-
+evant information with the help of systematic protocol having
+search string along with research questions. The results of
+SLR are measured more precise, trustworthy and less biased
+when we compare it to OLR. This segment is used for
+collecting data according to research questions. It is used
+for identifying success factors having positive impact on
+quality requirement change management process. two SLRs
+have been used for identifying success factors, challenges
+and practices. One is used for critical success factors and
+critical challenges while the other for validation of practices.
+We know that an SLR acts like a map for gathering and identi-
+fying related data [35]. Stages of SLR are shown in Figure 5.
+We have used Google scholar, Science Direct, IEEE, Explore
+and Springer, because these databases and search engines
+gave result matched to our title of our research article and
+RQs defined.
+
+A. TRIAL SEARCH
+Initially, the following trial search string was used. ((‘‘Soft-
+ware Outsourcing’’ OR ‘‘Information Systems Outsourcing’’ FIGURE 5. Stages of SLR.
+
+OR ‘‘IT Outsourcing’’) AND (‘‘Software Evaluation’’ OR
+‘‘Software Analysis’’ OR ‘‘Software Estimation’’ OR ‘‘soft- TABLE 2. Search engine/online libraries results.
+
+ware estimation’’ OR ‘‘Software Inquiry’’ OR ‘‘software
+inquest’’) AND (‘‘Hurdles’’ OR ‘‘Risk’’ OR ‘‘Barriers’’ OR
+‘‘Threat’’ OR ‘‘Warning’’ OR ‘‘Intimidation’’ OR ‘‘Haz-
+ard’’ OR ‘‘Scratch’’ OR ‘‘Exposure’’ OR ‘‘Disclosure’’ OR
+‘‘Leak’’ OR ‘‘Reveal’’ OR ‘‘Divulge’’) AND (‘‘Practice’’
+OR ‘‘Solution’’ OR ‘‘Resolution’’ OR ‘‘Result’’ OR
+‘‘Clarification’’)).
+
+Desired result did not come on the above string. We mod-
+ified it. Updated version is as under.
+
+((‘‘Software’’ OR ‘‘Software Product’’ OR ‘‘Business
+Software’’) AND (‘‘Outsourcing’’ OR ‘‘Information Systems
+Outsourcing’’ OR ‘‘IT Outsourcing’’) AND (‘‘Vendor’’ OR OR ‘‘Difficulties’’) AND (‘‘Practices’’ OR ‘‘Solutions’’)).
+‘‘Seller’’ OR ‘‘Merchant’’ OR ‘‘Retailer’’ OR ‘‘Dealer’’) Details are shown in Table.1. This is an extended form of the
+AND (‘‘Software Quality’’ OR ‘‘Software Excellence’’) paper accepted in ICGSE 2021: International Conference on
+AND (‘‘Software Requirements Change’’ OR ‘‘Software Global Software Engineering, Moscow, Russia.
+Requirement Modification’’ OR ‘‘Software Requirement We have used Google scholar, Science Direct, IEEE,
+Amendments’’ OR ‘‘Software Requirement Alteration’’) Explore and Springer, because these databases and search
+AND (‘‘Software Requirement Change Management’’ OR engines gave result matched to our title of our research article
+‘‘Software Requirement Change Administration’’) AND and RQs defined.
+(‘‘Software Quality Requirement Evaluation’’ OR ‘‘Software
+Quality Requirement Analysis’’ OR ‘‘Software Estimation’’ B. PUBLICATION COLLECTION
+OR ‘‘Software Investigation’’) AND (‘‘Success Factors’’ OR 1) ENCLOSURE STANDARDS
+‘‘Achievement Factors’’ OR ‘‘Accomplishment Factors’’ OR Enclosure criteria is used which type of works will used for
+‘‘Winner Factors’’) AND (‘‘Challenges’’ OR ‘‘Hurdles’’ data extraction process.
+
+VOLUME 9, 2021 99685
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+The following standard is used.
+• Make a part of those papers written in English language
+• Those papers will be included related to research topic.
+• Terms specific to RQs.
+
+2) EXCLUSION CRITERIA
+Those work not related to research area will be eliminated.
+
+We have made the following criteria.
+• Research papers not related to RQs.
+• Studies not related to the title to the research.
+
+FIGURE 6. Frequency analysis of the investigated success factors.
+• Matching papers.
+• Papers not in English language.
+
+requirement change management, we can easily manage a
+C. DATA EXTRACTION change of requirement coming from business customers.
+This segment was finished by the first author. Data abstrac- It can promptly give feedback to a customer requirement
+tion process was completed by the primary two authors of the change. Lindquist [36] is of the view that proper require-
+paper. Success factors, challenges, practices were registered ment change management manage customer requirement in
+distinctly with respect to country, data, methods etc. a best way. Managing requirement change in well-structured
+
+way helps in achieving desired goal of software project
+D. DATA SYNTHESIS procedure [37].
+This step was completed by the author in coordination with Success factor2 (Rapid delivery) with 38% is the main
+the supervisor. Success factors were listed from 116 papers. at success factor in quality change in requirement manage-
+first stage, total 34 success factors were listed with the help of ment at global software development process. Rapid deliv-
+systematic literature review. After receiving comments from ery focuses on how fast we can deliver required functions.
+supervisor, these were reduced to 16 as a final. When quality requirement change is occurred. Rapid delivery
+
+We have found through literature review that quality promptly delivers the said eminent requirements.
+change management is the critical issue in software develop- Success factor3 (Quality software products) with 37%
+ment and maintenance. Most of the software contract failed is another important success factor in quality change require-
+due to poor requirement change management. Our study ment management at global software development business
+focus on to bridge this gap. This paper is one component process. The main hurdle in development of quality software
+of our proposed model that will assist vendor organization is exact estimate. The accomplishment of a software project
+to gauge their status for quality requirement change manage- growth is basically measured by several aspects that would
+ment in context of quality software development. help in bringing high quality software on scheduled plan and
+
+at low-priced [38]. Quality software product aims on how to
+IV. RESULTS maintain the quality of a business product when there comes
+A. SUCCESS FACTORS RECOGNIZED THROUGH a change in technological fields.
+SYSTEMATIC LITERATURE REVIEW (SLR) Success factor4 (Access to market) with 31% is the
+Total sixteen success factors were recognized in data extrac- prominent success factor in quality change requirement in
+tion process from primary selected papers. In order to answer global software development. Most organizations are now-
+research Q1, success factors are mentioned in Table 3 and a-days adopting global software development paradigm.
+Figure 6 having positive impact on software quality require- It helps in achieving high quality product at low cost. Access
+ment change management. Success factor having high fre- to market helps in achieving quality product at door step.
+quency or percentage considered applicable in the literature. Because of several paybacks such as less budget, entree to
+
+We have used descriptive analysis instead of thematic skilled crews, and entrée to market, many corporations have
+analysis. Descriptive analysis is a significant primary phase accepted global software development platform.
+for showing statistical analysis. It gives assistance in rela- Success factor 5 (Project management) with 30% falls
+tionship among different variables. We have used statistical in an important category which has positive effect on quality
+approaches like Chi- Square Test (Linear by Linear Asso- change in requirement management in the field of soft-
+ciation) and Spearman’s rank correlation for our analysis as ware development process. Achieving high quality prod-
+numerical data is used for data analysis. The following chart uct, it is important to manage project activities. In the
+shows identified success factors. view of Khan et al. [39], high and low level management is
+
+Success factor1 (Proper requirement change manage- mandatory for the success implementation of quality prod-
+ment) with 60% is considered critical success factor in uct. A worthy change acceptance decision can aid software
+literature for quality change in requirement management project manager in managing SRCs (Software requirement
+at global software development environment. Using proper changes). Software project management is accountable for
+
+99686 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 3. Group of success factors.
+
+the project disaster or project victory. Change impact analysis on software quality requirement change management. Qual-
+lessen the burden on development administrators in decision ity product with low cost will be preferred. When there is an
+to agree or to reject the business project [40]. According to accurate estimation, a product with desired quality require-
+Ateeqanaseer [41] Projectmanagement and project team have ment will be prepared andmaintained. Prikladnicki et al. [42]
+a key role in removing time deficiency in quality requirement is of the view that poor cost estimation leads to project failure.
+change management. It is therefore the need of the business environment to first
+
+Success factor 6 (Skills and methodologies) with per- estimate the cost in a best and better way to develop a quality
+centage has a main role in quality requirement change man- product. Due to low labor cost, the day to day business is
+agement in software outsourcing. Team work is fruitful transforming to GSD in order to achieve quality product [43].
+when adopt standard skills and methodologies. According to Another important success factor in quality requirement is
+Khan et al. [39] Quality product is very difficult to achieve Clear plan and roadmapwith percentage 26. Clear plan and
+when there is no use of standard of framework and models. clear road map helps in achieving quality product. Customers
+Software business is transferring towards global software cannot be satisfied nor a product be boosted without clear
+development because of skilled labors. map and clear road map. It guides software organizations in
+
+Success factor 7 (Low labor cost/effort estimation) with achieving high quality product in software quality require-
+percentage 27% is another key factor having positive impact ment change management. Akbar says that eight out ten
+
+VOLUME 9, 2021 99687
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+organizations are failed due to lack of clear plan [37]. Clear In success factor15 (Robust model) with percentage
+plan and clear road map is essential for identification of ration 12%, when standard tools are used, a product with
+requirement change management challenges. desired quality can easily be achieved. As a result, customers
+
+Success factor 9 (Agile process) with percentage 22 has will also be satisfied. Global software development models,
+its own role in software quality requirement change manage- approaches and procedures that can competently and effec-
+ment process. Without agile process, a quality product can’t tively perform GSD work [49].
+be maintained. Agile process handles process requirement The low citation success factor in our work is the Geo-
+changes at any stage of software product development pro- graphical juncture and culture awareness. Its percentage
+cess [44]. This factor is used in improving communication is 7. Geographical juncture increases the space of an organi-
+among vendor organizations [45]. zation In geographical juncture and culture awareness, a task
+
+Another important success factor called low labor cost is accomplished by different team members location at dif-
+plays an important role in quality requirement change man- ferent places [50]. Mission is accomplished by joint efforts
+agement. It is used in achieving high quality product. of different experts. This success factors have direct impact
+Business is transforming towards software global develop- on all kinds of coordination among expert groups. To answer
+ment due to low labor cost [25]. Customers and vendors are RQ1 the list of success factors is highlighted at Table 3.
+more satisfied with a product having low labor cost.
+
+Success factor11 (User satisfaction) with percentage B. CRITICAL SUCCESS FACTORS
+22% also plays an important role in software quality require- Success factors will be considered critical success factors
+ment change management process. Unless user or customer whose citation is ≥20%. Criteria was set low in order to
+is not satisfied, a goal regarding achieving quality product give touch more and more success factors who have positive
+cannot be achieved. User satisfaction and quality requirement impact on quality requirement change management. Similar
+change is interdependent. Users feedback organize quality standards also used by former researchers [6], [13]. Total
+requirement change in a better way [46]. User satisfaction fourteen success factors were considered critical success fac-
+process evolves throughout the product life development tors. Occurrences of critical success factors are revealed in
+cycle. This factor us used for computing system progress. the Figure 7.
+User satisfaction is one of the five success factors having
+positive impact on entire organization.
+
+Success factor12 (Communication and close coordina-
+tion)with 22% has its own positive impact in quality require-
+ment change management process. We know that policies
+and rules of the business are varying day by day. It is the
+need of the day to have close communication and coordi-
+nation among clients and vendor organizations for achieving
+extraordinary class product on minimum cost. Coordination
+among development team and end users is a key process
+to provoke effective requirements in software requirement
+change management processes [47]. Communication is used
+for switching information among organization workers. It has
+continuous role throughout the product life development life
+cycle.
+
+Another Success factor13 (Proper scheduling and time
+constraints)with 19% has its own role in quality requirement FIGURE 7. Frequency of critical success factors.
+change management. business organizations cannot succeed
+in achieving its business goal until it has its own road map In order to answer RQ2 Complete critical success factors
+and clear time schedule. Proper scheduling can save time with respect to company size and database wise are men-
+in achieving business quality product [48]. With the help tioned in Table. 4 and Table. 5 respectively.
+of proper scheduling and time constraints, organizations can
+easily analyze the upcoming requirement change. C. COMPARISON OF SUCCESS FACTORS ACROSS
+
+Success factor14 (Frequent technological change) with DIFFERENT COMPANIES
+percentage ratio 17 has its own positive role in quality require- Among the total 116 research papers extracted for quality
+ment change management process. requirement change can requirement change management, company sizes were men-
+be managed in a best way with due to frequent technological tioned in 113 papers shown in given Table 4.We have devided
+change. Research shows that change in technology is ben- our work in three compani sizes. A company whose employes
+eficial for quality requirement change. It is the technologi- less than 20 will be considered small company. A medium
+cal change who has shifted the business to global software will be whose employees less than 200. While large company
+development [43]. has more than 200 employees.
+
+99688 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 4. Precipitate of critical success factors with respect to company TABLE 5. Precipitate of critical success factors with respect to search
+size. engine/database.
+
+Five success factors ‘Skills and Methodologies’, ‘Low
+Cost/Effort Estimation’, ‘Clear Plan and Road Map’, ‘Com-
+munication/Close Coordination’ and ‘Proper Scheduling and
+Time Constraints’ have same occurrences(28%) in mixed
+organization. Whether small, medium or large organization,
+when there is no proper change management, they cant
+
+‘Proper Requirement change Management’ and ‘quality achieve their business goal.
+software product’ are critical success factors (=>20) found The most cited success factors in all types of organizations
+in any company size. It means that these success factors have is ‘Proper requirement change management’.
+equal reputation in all type of organizations. In order to find exact and authentic difference among
+
+Proper Requirement change Management is a critical suc- success factors identified different Comapany sizes, a help
+cess factor in small organization (100%), medium organiza- is taken from linear by linear association chi-square test. It is
+tion (75%), large organization (58%) and in mixed (57%). preferable to use when we want to see difference between
+
+Success factor ‘Project Management’ is critical in mixed different variables, the results can be seen in Table 6. In order
+and in large organizations because it has so many tools, labors to answer RQ3, results are shown in Table 6. It shows that
+and assignments to be managed. identified success factors are varying from size to size.
+
+VOLUME 9, 2021 99689
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 6. Success factors across different company sizes.
+
+TABLE 7. Spearman’s rank correlation.
+
+Our primary papers with respect to company size is shown The association among the two company size have been
+in figure 8. From the figure, it is clear that most of the articles mentined in Fig. 9. with scatter diagram. Comperison was
+are related to large organizations. made between company size large and mixed.
+
+Applying Spearman’s rank correlation on Success factors
+identified in different company sizes like large size andmixed D. COMPARISON OF SUCCESS FACTORS ACROSS
+size in respect of degree of relationship shows that there is a DIFFERENT DATABASES/SEARCH ENGINES
+strong relationship between these two terms. The correlation Among the total 116 research papers extracted for quality
+coefficient between them is 0.502 suggesting that a strong and requirement change management, databases are mentioned
+positvie relationship exists. This relationship is shown in the in 113 papers shown in Table 8 and Fig. 8. From the Table it
+following Table 7. is shown that success factors are in 97 research papers from
+
+99690 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+FIGURE 8. Distribution of the identified article company wise.
+
+FIGURE 9. Scatter diagram of association among all success factors through the two search engines.
+
+Google scholor, 2 in Science Direct, 6 in IEEE Explore and Springer(12%). It means papers of papers of user satisfaction
+8 in Springer. Our result shows out of 16 success factors, in quality requiremnet change management are mostly cited
+all 16 success factors have been reported in Google Scholor in Google Scholor. Quality software product is a critical
+database. No successs factors have zero frequency in Google success factor in Google scholor(37%), Science Direct(50%)
+Scholor database. These success factors with percentages and Springer(25%). We found another significant differ-
+are ‘Proper Requirement change Management(57%)’,‘Rapid ence in success factor project management. Its frequency
+Delivery(31%)’, ‘Quality Software Product(37%)’, ‘Access is high in Google Scholor(31%), Science Direct(50%) and
+to Market(31%)’, ‘Project Management(31%)’, ‘Clear Plan IEEE Xplore(33%) but is low in Springer(0%). It shows
+and Road Map(26%)’, ‘Low Cost/Effort Estimation(28%)’, management related paperes are mostly cited in first three
+‘Agile Process(26%)’, ‘Low Labor Cost(19%)’, ‘Communi- search engines. Nine success factors have same frequency
+cation/Close Coordination(26%)’, ‘User Satisfaction(22%)’, ratios in IEEE Xplore. These are ‘Rapid Delivery’, ‘Qual-
+‘Proper Scheduling and Time Constraints(18%)’, ‘Fre- ity Software Product’, ‘Access to Market’, ‘Clear Plan and
+quent Technologic Change(14%)’, ‘RobustModel(10%)’ and Road Map’, ‘Agile Process’, ‘Low Labor Cost’, ‘Commu-
+‘Proper Scheduling and Time Constraints(5%)’. This means nication/Close Coordination’, ‘Proper Scheduling and Time
+that all quality requirement chagnes are performing here. Constraints’, ‘Frequent Technological Change’. These suc-
+
+success Factor ‘Proper Requirement change Management’ cess factors attract same motivations in this search engine.
+has most citation in all databases(Google scholor = 57%, In Science Direct, 5 success factors are missing. These are
+Science Direct = 100%, IEEE Xplore = 100%, Springer = Rapid Delivery, Skills and Methodologies, user satisfaction,
+50%). The frequency of Rapid Delivery is high in Google Frequent Technological Changes and RobustModel.While in
+Scholor while it is low in Scince Direct, IEEE Xplore and IEEE Explore and in Springer, 3 success factors ara missing
+Springer. We also see significance difference in success in each. In order to answer RQ4, it is clear from Table 8,
+facotr ‘User Satisfaction’. It is high in Google Scholor(26%) that identified success factors are varying from database to
+while it is low in Scince Direct(0%), IEEE plore(0%) and database or from one search engine to another search engine.
+
+VOLUME 9, 2021 99691
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 8. Success factor across different search engines or database.
+
+TABLE 9. Spearman’s rank correlation.
+
+In order to find exact and authentic difference among success IEEE Explore in respect of degree of relationship shows a
+factors identified in database wise, a help is taken from linear perfect connection between these two search engines. The
+by linear association Chi-Square Test. It is preferable to use correlation coefficient between them is 0.859 signifying per-
+when we want to see difference between different variables, fect and optimistic association exists. This relationship is
+output is shown in Table 8. shown in the following Table 9.
+
+Figure 10 shows the distribution of an identified articles The relationship between the two search engines has been
+regarding search engines/digital libraries. It is clear from the shown in Fig. 11 using scatter diagram.
+figure that most of the paper were collected with the help
+of search engine google scholar. Springer comes on second E. COMPARISON OF SUCCESS FACTORS ACROSS
+position. Details are shown in figure 9. DIFFERENT DECADES
+
+Similarly, when we Apply Spearman’s rank correlation on Among the total 116 research papers extracted for quality
+Success factors identified in databases Google Scholar and requirement change management, decades were mentioned
+
+99692 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+FIGURE 10. Distribution of an identified article database wise.
+
+FIGURE 11. Scatter graph of association among all success factors crosswise the two search engines.
+
+in 113 papers shown in Table 10. Our paper period start ‘Project Management’ and ‘Skill and Methodology’ are crit-
+from 1992-2020. We have divided our periods in three parts. ical success factors in all the three periods. Missing success
+First period starts from 1992 to 2002. Purpose was to give factors in first perios are ‘Access to Market’, ‘Clear Plan and
+touch more and more papers related to our topic and research Road Map’, ‘Frequent Technological Changes’. The success
+questions. Second period starts from 2003 to 2012 while factor ‘Access to Market’ has zero publication in first period
+third period from 2013 to 2020. Total 75 papers have been while it is critical in second and thirs period.
+published in third period. Which shows that much work has In order to answer RQ5, it is clear from Table 10, that
+been done in this period. 32 papers published in second identified success factors are varying from decade to decade.
+period while 6 papers in first period. Less work has been In order to find exact and authentic difference among suc-
+done in third period in quality requirement change man- cess factors identified in different decades, we have use linear
+agement’s perspective. Our result shows out of 16 success by linear association chi-square test. It is preferable to use
+factors, 16 success factors have been reported in second when we want to see difference between different variables,
+and third period. No successs factors have zero frequency the results can be seen in table 10.
+in these periods. This means that all quality requirement Fig. 12 shows the distribution of an identified arti-
+chagnes are performing here. ‘Proper Requirement change cles regarding different decades. It is clear from the fig-
+Management’, ‘Rapid Delivery’, ‘Quality Software Product’, ure that most of the paper were collected from third
+
+VOLUME 9, 2021 99693
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 10. Success factors across different decades.
+
+to decade. Result of the success factors changes from com-
+pany to papers in quality requirement change management.
+What is the stage of certification for quality requirement
+changemanagement? It is possibility that success factors may
+not be presented in well manner. By using different research
+methods, some biased reports can have occurred. Some simi-
+larities were reported between our findings and findings of
+other researchers. For authentication and validation of our
+findings, we will use case studies, same techniques may also
+be used by other researchers. Some papers came with unclear
+information regarding company size and different databases.
+Most of the company were large in size in research study,
+we company and database to database is shown in Table 3 and
+
+FIGURE 12. Distribution of an identified article decade wise.
+Table 4 respectively. Brief discussion is in result section.
+
+This paper is one component of our research work where
+decade (2013-2021). Second decade (2003-2012) comes we have a model which will based on CSF/CBs and
+on second positon where most of our paper were collected their practices that will assist vendor organization to gauge
+related to our topic. their status for quality requirement change management in
+
+context GSD.
+V. DISCUSSION
+Answering research Q1, total 16 success factors were found
+in literature. Answering research Q2, total 14 critical success VI. STUDY LIMITATIONS
+factors found. Our criteria for critical success factors was low We restricted our SLRStudy to four search engines and online
+in order to give touch more success factors in the field quality libraries (Google Scholar, Science Direct, IEEE Explore and
+requirement change management. Answering research Q3, Springer). There may be other related search engines and
+analysis done by us shows that success factors acknowledged online libraries, we may not have touched. The literature
+in the study changes from company to company. Answer- review development phase led by the first author of the paper,
+ing research Q4, analysis done by us shows that success therefor it is the possibility the findings of the study can be
+factors identified in the literature changes from database to biased during collection process. However, the second and
+database. Answering RQ5, an analysis shows that success third authors endlessly inspect the extracted data to find any
+factors identified in the literature are changing from decade challenges and hurdles unheeded by the first author.
+
+99694 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 11. List of selected papers of success factors.
+
+VOLUME 9, 2021 99695
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 11. (Continued.) List of selected papers of success factors.
+
+99696 VOLUME 9, 2021
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+TABLE 11. (Continued.) List of selected papers of success factors.
+
+VII. CONCLUSION AND FUTURE WORK [5] N. Ramasubbu, ‘‘Governing software process improvementsin globally
+In this stage, we have only identified the success factors of distributed product development,’’ IEEE Trans. Softw. Eng., vol. 40, no. 3,
+
+pp. 235–250, Mar. 2014.
+software outsourcing quality evaluation management Model [6] S. U. Khan and M. I. Azeem, ‘‘Intercultural challenges in offshore soft-
+(SOQEMM). Next stage will be validation process. Valida- ware development outsourcing relationships: An exploratory study using
+tion process will be done in using case study in an outsourcing a systematic literature review,’’ IET Softw., vol. 8, no. 4, pp. 161–173,
+
+Aug. 2014.
+business. The keynote of this research is to build a model for [7] V. Yadav, ‘‘Considerations for effective requirements analysis in offshore
+vendor firms to assist them in managing quality requirement software development projects,’’Commun. Assoc. Inf. Syst., vol. 39, no. 11,
+change. Researchers who work in the field of quality require- pp. 101–110, 2016.
+
+ment change management can take help from this work. Total [8] M. Shafiq, Q. Zhang, M. A. Akbar, A. A. Khan, and S. Hussain, ‘‘Effect of
+project management in requirements engineering and requirements change
+
+sixteen success factors have been finalized. Among these management processes for global software development,’’ IEEE Access,
+sixteen success factors, fourteen success factors have been vol. 6, pp. 25747–25763, 2018.
+
+listed as critical success factors (CSFs). Success factors who [9] M. A. Akbar, ‘‘Improving the quality of software development process
+by introducing a new methodology-AZ-model,’’ IEEE Access, vol. 6,
+
+citations are equal or greater than 20 are considered critical pp. 4811–4823, 2018.
+success factors. We have set the criteria low in order to [10] M. W. Bhatti, F. Hayat, N. Ehsan, A. Ishaque, S. Ahmed, and E. Mirza,
+
+touch more success factors having positive impact on quality ‘‘A methodology to manage the changing requirements of a software
+project,’’ in Proc. Int. Conf. Comput. Inf. Syst. Ind. Manage. Appl. (CISIM),
+
+requirement change. Our success factors were compared in Oct. 2010, pp. 319–322.
+different company and different databases. [11] A. A. Khan, S. Basri, and P. D. D. Dominic, ‘‘A process model for require-
+
+ments change management in collocated software development,’’ in Proc.
+IEEE Symp. E-Learn., E-Manage. E-Services, Oct. 2012, pp. 213–222.
+
+APPENDIX [12] M. Shameem, C. Kumar, B. Chandra, and A. A. Khan, ‘‘Systematic review
+See Table 11. of success factors for scaling agile methods in global software development
+
+environment: A client-vendor perspective,’’ in Proc. 24th Asia–Pacific
+Softw. Eng. Conf. Workshops (APSECW), Dec. 2017, pp. 17–24.
+
+ACKNOWLEDGMENT [13] M. Niazi, M. El-Attar, M. Usma, and N. Ikram, ‘‘GlobReq: A framework
+The findings achieved herein are solely the responsibility of for improving requirements engineering in global software development
+the authors. projects: Preliminary results,’’ in Proc. 16th Int. Conf. Eval. Assessment
+
+Softw. Eng. (EASE ), 2012, pp. 166–170.
+[14] Christopher Lindquist Fixing the Requirements Mess, CIO Rep. USA
+
+REFERENCES Magzine, 2006, pp. 23–34.
+[1] S. Ali, N. Iqbal, and Y. T. Hafeez, ‘‘Towards requirement change manage- [15] S. Komi-Sirvio and M. Tihinen, ‘‘Lessons learned by participants of
+
+ment for global software development using case base reasoning,’’Mehran distributed software development knowledge and process management,’’
+Univ. Res. J. Eng. Technol., vol. 7, pp. 111–123, Jul. 2018. Knowledge Process Manage., vol. 12, pp. 108–122, Apr. 2005.
+
+[2] S. A. Kumar, ‘‘Study the impact of requirements management charac- [16] S. N. E. Hussain and S. Nauman, ‘‘A strategic framework for requirements
+teristics in global software development projects: An ontology based change in technical projects,’’ in Proc. 3rd IEEE Int. Conf. Comput. Sci.
+approach,’’ Int. J. Softw. Eng. Appl., vol. 2, pp. 311–333, Oct. 2011. Inf. Technol., Jul. 2010, pp. 354–358.
+
+[3] V. Sinha, B. Sengupta, and S. Chandra, ‘‘Enabling collaboration in [17] D. Pandey, U. Suman, and A. K. Ramani, ‘‘An effective requirement
+distributed requirements management,’’ IEEE Softw., vol. 23, no. 5, engineering process model for software development and requirements
+pp. 52–61, Sep. 2006. management,’’ in Proc. Int. Conf. Adv. Recent Technol. Commun. Comput.,
+
+[4] A. A. Khan, S. Basri, and P. D. Dominic, ‘‘A propose framework for Oct. 2010, pp. 223–234.
+requirement change management in global software development,’’ in [18] R. Lai, ‘‘A requirements management method for global software develop-
+Proc. Int. Conf. Comput. Inf. Sci., Jun. 2012, pp. 211–229. ment,’’ Adv. Inf. Sci., vol. 1, pp. 38–58, Mar. 2013.
+
+VOLUME 9, 2021 99697
+
+
+
+J. Ahmad et al.: Role of Critical Success Factors in Offshore Quality RCM
+
+[19] S. Ramzan and N. Ikram, ‘‘Requirement change management process [43] H. Khatoon, Y. H. M. Asma, and M. A. H. Naz, ‘‘Requirement change
+models: Activities, artifacts and roles,’’ inProc. IEEE Int. Multitopic Conf., management for global software development using ontology,’’ in Proc.
+Dec. 2006, pp. 219–223. ICSE, 2020, pp. 222–233.
+
+[20] A. Khatoon, Y. H. Motla, M. Azeem, H. Naz, and S. Nazir, ‘‘Requirement [44] I. Perira, ‘‘Impact of poor requirement engineering in software outsourc-
+change management for global software development using ontology,’’ in ing: A study on software developers experience,’’ Int. J. Comput. Commun.
+Proc. IEEE 9th Int. Conf. Emerg. Technol. (ICET), Dec. 2013, pp. 1–6. Control, vol. 6, no. 2, pp. 337–348, Jun. 2011.
+
+[21] M. A. Akbar, ‘‘SRCMIMM: Managing requirements change activities in [45] V. Yadav, M. Adya, D. Nath, and V. Sridhar, ‘‘Considerations for effective
+global software development,’’ in Proc. 34th ACM/SIGAPP Symp., 2019, requirements analysis in offshore software development projects: Lessons
+pp. 1633–1636. from multi-method research,’’ Commun. Assoc. Inf. Syst., vol. 39, no. 11,
+
+[22] M. C. H. Niazi and R. M. A. A. Babar, ‘‘A model for requirements pp. 212–223, Oct. 2016.
+change management: Implementation of CMMI level 2 specic practice,’’ [46] S. V. Shrivastava, ‘‘A framework for risk management in globally dis-
+in Proc. Int. Conf. Product Focused Softw. Process Improvement, 2008, tributed agile software development (Agile GSD),’’ Differences, vol. 4,
+pp. 143–157. no. 3, pp. 97–111, 2015.
+
+[23] I. Keshta, M. Niazi, and M. Alshayeb, ‘‘Towards implementation of [47] S. Khankaew, ‘‘A review of practice and problems in requirements engi-
+requirements management specific practices (SP1.3 and SP1.4) for Saudi neering in small and medium software enterprises in Thailand,’’ in Proc.
+Arabian small and medium sized software development organizations,’’ Int. Workshop Empirical Requirement Eng., Aug. 2014, pp. 101–119.
+IEEE Access, vol. 5, pp. 2412–2413, 2017. [48] M. A. Rahman, R. Razali, and F. Filzahti, ‘‘Risk factors for software
+
+[24] D. C. Ince, Introduction to Software Quality Assurance and its Implemen- requirements change implementation,’’ Int. J. Adv. Comput. Sci. Appl.,
+tation. New York, NY, USA: McGraw-Hill, 1995, pp. 212–223. vol. 10, no. 3, pp. 212–222, 2019.
+
+[25] A. Khatoon, Y. Hafeez, S. Asghar, and T. Ali, ‘‘An ontological framework [49] W. Hussain and T. Clear, ‘‘GRCM: A model for global requirements
+for requirement changemanagement in distributed environment,’’Nucleus, change management,’’ Auckland Univ. Technol., Auckland, New Zealand,
+vol. 51, pp. 291–301, Apr. 2014. Tech. Rep. REEW 2012, 2017, pp. 294–303.
+
+[26] N. M. Minhas and A. Zulfiqar, ‘‘An improved framework for requirement [50] A. A. Khan, ‘‘Effects of geographical, socio-cultural and temporal dis-
+changemanagement in global software development,’’ J. Softw. Eng. Appl., tances on communication in global software development during require-
+vol. 7, pp. 192–209, Aug. 2014. ments change management a pilot study,’’ in Proc. ENASE, Apr. 2015,
+
+[27] S. U. Khan, M. Niazi, and R. Ahmad, ‘‘Critical barriers for offshore pp. 276–282.
+software development outsourcing vendors,’’ in Proc. 16th Asia–Pacific
+Softw. Eng. Conf., Apr. 2009, pp. 79–86.
+
+[28] N. M. Minhas and A. Zulfiqar, ‘‘An improved framework for requirement
+changemanagement in global software development,’’ J. Softw. Eng. Appl.,
+vol. 7, no. 9, pp. 779–790, 2014.
+
+[29] M. Heindl and S. Biffl, ‘‘Risk management with enhanced tracing of JAMSHED AHMAD received the M.S. (CS)
+requirements rationale in highly distributed projects,’’ in Proc. Int. Work- degree from the University of Science and Tech-
+shop Global Softw. Develop. Practitioner, 2006, pp. 20–26. nology Bannu, Pakistan, where he is currently
+
+[30] L.Widrig,Managing Software Requirements, AUnified Approach. Boston, pursuing the Ph.D. degree. He has participated in
+MA, USA: Addison-Welsey, 2000, pp. 222–243. many international conferences related to software
+
+[31] M. Makarainen, ‘‘Software change management process in the develop- engineering field. His field of study is software
+ment of embedded software,’’ VTT Tech. Res. Center Finland, ESPOO, engineering.
+Finland, Tech. Rep. 342, 2000, pp. 212–223.
+
+[32] M. Makarainen, ‘‘Software change management process in the develop-
+ment of embedded software,’’ VTT Tech. Res. Center Finland, ESPOO,
+Finland, Tech. Rep. 455, 2000, pp. 100–122.
+
+[33] B. Kitchenham, ‘‘Guidelines for performing systematic literature reviews
+in software engineering,’’ Tech. Rep., 2007, pp. 101–112.
+
+[34] M. Niazi and J. Arab, ‘‘Do systematic literature reviews outperform infor-
+mal literature reviews in the software engineering domain,’’ Arabian J. Sci. ABDUL WAHID KHAN received the Ph.D.
+Eng. vol. 40, no. 3, pp. 612–643, 2015. degree in computer science from the University of
+
+[35] B. Keele, ‘‘Guidelines for performing systematic literature reviews in Malakand. He is currently working as an Assistant
+software engineering,’’ Keele Univ., Keele, U.K., Tech. Rep. 22, 2007, Professor with the University of Science and Tech-
+pp. 212–250. nology Bannu, Pakistan.
+
+[36] C. Lindquist, Fixing the Requirements Mess. Framingham,WA, USA: CIO
+Magazine, 2006.
+
+[37] M. A. Akbar, ‘‘Requirement change management challenges in GSD: An
+analytical hierarchy process approach,’’ J. Softw., Evol. Process, vol. 32,
+pp. 21–33, Jul. 2020.
+
+[38] M. Bano, D. Zowghi, and F. da Rimini, ‘‘User satisfaction and system
+success: An empirical exploration of user involvement in software devel-
+opment,’’ Empirical Softw. Eng., vol. 2, pp. 55–62, Oct. 2017.
+
+[39] A. A. Khan, J. Keung, S. Hussain, and K. E. Bennin, ‘‘Effects of geograph- HABIB ULLAH KHAN received the Ph.D. degree
+ical, socio-cultural and temporal distances on communication in global in management information systems from Leeds
+software development during requirements change management a pilot Beckett University, U.K. He is working as a Pro-
+study,’’ in Proc. 10th Int. Conf. Eval. Novel Approaches to Softw. Eng., fessor of MIS with the Department of Account-
+Apr. 2015, pp. 159–168.
+
+[40] J. Shah, N. Kama, and N. A. A. Bakar, ‘‘A novel effort estimationmodel for ing and Information Systems, College of Business
+software requirement changes during software development phase,’’ Int. and Economics, Qatar University, Qatar. He has
+J. Softw. Eng. Appl., vol. 9, pp. 231–243, Nov. 2018. nearly 20 years of industry, teaching, and research
+
+[41] A. Naseer, ‘‘Exploring causes of requirement change,’’ Univ. Manage. experience. His research interests include IT adop-
+Technol., Lahore, Pakistan, Tech. Rep. 282, 2014, pp. 111–113. tion, social media, Internet addiction, mobile
+
+[42] F. Prikladnicki, J. Audy, and R. Evaristo, ‘‘Requirements management in commerce, computer mediated communication,
+global software development: Preliminary findings from a case study in a IT outstanding, big data, and IT security.
+sw-cmm context,’’ in Proc. ICSE, 2003, pp. 53–58.
+
+99698 VOLUME 9, 2021

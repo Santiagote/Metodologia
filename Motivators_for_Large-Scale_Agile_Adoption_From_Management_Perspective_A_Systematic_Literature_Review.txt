@@ -1,0 +1,737 @@
+﻿Received December 8, 2018, accepted January 14, 2019, date of publication January 31, 2019, date of current version March 4, 2019.
+Digital Object Identifier 10.1109/ACCESS.2019.2896212
+
+Motivators for Large-Scale Agile Adoption From
+Management Perspective: A Systematic
+Literature Review
+MUHAMMAD FAISAL ABRAR 1, MUHAMMAD SOHAIL KHAN1, SIKANDAR ALI 2,
+UMAR ALI3, MUHAMMAD FARAN MAJEED 4, AMJAD ALI3, BAHRUL AMIN3,
+AND NASIR RASHEED5
+1Department of Computer Software Engineering, University of Engineering and Technology at Mardan, Mardan 23200, Pakistan
+2 Department of Computer Science and Technology, China University of Petroleum, Beijing 102249, China
+3Department of Computer Science, University of Swat, Mingora 19130, Pakistan
+4Department of Computer Science, Shaheed Benazir Bhutto University at Sheringal, Sheringal 18000, Pakistan
+5Department of Computer Science and IT, University of Malakand, Chakdara 18800, Pakistan
+
+Corresponding authors: Muhammad Sohail Khan (sohail.khan@uetmardan.edu.pk) and Sikandar Ali (sikandar@uswat.edu.pk)
+
+ABSTRACT The use of agile methods for software development has grown to a large extent in the last few
+years. These methods ensure the quick delivery of software products with minimal cost and user satisfaction.
+Though these techniques were initially developed for small developmental teams, certain challenges have
+been observed when these methods are applied on large scale. However, we have conducted a systematic
+literature review (SLR) for the identification of motivators for adopting agile methods on a large scale from
+a management perspective. Thus, we have identified a total of 21 motivators for adopting agile methods
+on a large scale from a management perspective. Among these motivators, some were marked as critical
+motivators depending on variables, e.g., the factors critical in one variable might not be critical in another
+variable. The factors which were recorded as critical in all variables are strong executive support, agile
+development environment training and learning, agile development expertise, team competency, and briefing
+of top management on agile. Furthermore, we also found that the impact of different motivators was different
+depending on time and place for project manager guidance, i.e., some motivators were most critical in
+one region while less critical in another. Similarly, some of the motivators were more critical in previous
+decades but less critical in recent decades because of different improvements in software processes and
+technologies. These motivators are also analyzed from different angles, i.e., decade-wise and region wise
+for project managers guidance. The motivators are extracted from a sample of 58 research papers identified
+via an SLR process. Finally, we have analyzed the identified motivators based on various variables, such as
+continents and digital libraries.
+
+INDEX TERMS Large-scale agile, agile software development, systematic literature review, adopting agile
+methodology, success factors.
+
+I. INTRODUCTION and projects require the involvement of other organizational
+Agile methods were meant for practice in single or small units like marketing, Human Resources (HR), and product
+development teams and projects [1]. However, due to its management. In spite of these obvious problems related to
+usefulness, these methods can be applied in Large-Scale LSAD teams and projects, there is an increasing tendency
+Agile Development (LSAD) teams and projects as well. towards adopting them [3]–[5].
+Adopting Agile methods in larger projects and teams [2], A thorough literature search established previous expla-
+is difficult as compared to smaller ones -which is the first nations of what large-scale agile is (Dingsoyr, Itkonen, &
+choice- larger ones will needmore coordination. LSAD teams Faegri, 2014). Size has been measured in the size of persons
+
+or teams, size of code, project budget, and project incantation.
+The associate editor coordinating the review of this manuscript and According to [6], a project consisted of seven development
+
+approving it for publication was Bora Onat. teams and 40 people will be termed as a large-scale project.
+
+22660 This work is licensed under a Creative Commons Attribution 3.0 License. For more information, see http://creativecommons.org/licenses/by/3.0/ VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+While [7] argue that a project which cost over 10million GBP i.e. scaling techniques used, and guidelines for improvement
+and a team size of 50 persons will be termed as a large-scale of Agile methods for large development teams. As stated by
+project. Additionally, [8] suggest that project having over the most up to date survey [17], [18], out 4000 participants
+5 million lines of code will be called as a large scale project. 62% participants state that they had more than 100 persons
+In point of view of [9], a project spell of 2 years with a project in their software houses, and 43% of participants have stated
+range of 60-80 traits/characteristics should be considered that more than 50% their team consists of agile experts.
+as a large-scale project. Grounded on the findings of [10], Certainly, the participants of this research were minimized to
+we can measure project size by the number of coordinating a selected smaller team of companies. Out of four thousand
+and collaborating teams. According to them a project hav- participants in the survey, 65% belongs to Northern America
+ing 2-9 collaborating teams will be called large-scale project and only 26% were from Europe. Nevertheless, this shows
+while a project over ten collaborating teams will be consid- that there appears to survive a large number of software
+ered very large scale. companies that have adopted or aims to adopt Agile methods
+
+Besides the above-mentioned findings of different into practice in a large-scale environment [17].
+researchers, we found a number of other studies debating Agile Software Developments method (ASDM) is the
+LSAD teams and projects as well. Most of these argued aggregate of incremental software engineering techniques
+on the number of persons take part in the project. In the which are supported on an ‘‘Agile Philosophy’’ snapped
+initial literature on Agile (Fowler, 2000) believe that the in the ‘‘Agile Manifesto’’ [19]. Even though mostly rec-
+crystal methodology is suitable for up to 50 persons. The ollecting olden reputable software development practices,
+same number has been stated by other researchers as a the agile methodology is able to be viewed as a substitute
+measurement of the size of the firms candidate for usingAgile for the ‘‘traditional software development methodologies’’.
+Software Development Methods (ASDM) [11]. Furthermore, While a traditional approach and methodology emphasize
+other researchers like (Koehnemann & Coats, 2009) have on straightforward planning and rigorous management of
+mentioned agile projects including up to 50 persons as small, modification, ASDM were designed to confess, and sharply
+and project ranging from 50 to 100 persons as large [12]. manage modification [19], [20]. ASDM have been both con-
+
+Participants of the XP2014 on large-scale agile workshop demned and supported. Research has manifested that accept-
+provided different definitions for LSAD team [3]. According ing change may be a part of failure and success [16]. It has
+to the participants, what is to be considered as large-scale been brought to light that agile approaches have increased
+depends largely on the person defining it and on the context. trust of both clients and vendor. But, on the other side, there is
+Based on the previous literature findings, we will define a proof that ASDM might not be best for larger projects and
+large-scale to represent Software Development Organiza- teams [2]. Therefore, a solution at hand is that each group
+tions (SDOs) having 50 or more employees or having at looks for its balance of ASDM [16].
+least six development teams. Moreover, all employees are Most common agile approaches are; Scrum and Extreme
+not necessary to be developers but it is important to belong Programming (XP) [21]. The problem of presenting ASDM
+to the same SDO. Additionally, they will be working on a enhances with the development team size [22]. The problem
+common project or developing a common product, and thus is partially connected with size creating huge lack of activity
+have a need to collaborate. For instance, software architects in an organization which weakens managerial change [23].
+and scrum masters are the available tools for assessing the ASDM are not constructed for the use of specific tools or
+organization size. trials, but reasonably on the basis of general and common
+
+Additionally, agile methods also touch business and approach. adopting ASDM, time and again needmodification
+management related functions. A crucial challenge is that of the whole organizational structure [14]. A noticeable rift
+an organization must move towards the iterative and between large-scale and small-scale adoption is that large
+feature-centric model. They must move away from life-cycle firms have more reliance on teams and project. This elevates
+models [13], which requires a change in attitude. The empha- the need for strict documentation and hence weakens swift-
+sis has to be adopted from enduring organization level ness and dynamism [24].Moreover, for coordination between
+planning to short-term project level planning [14]. Agile team and development teams have to work together with
+methods urge that planning is only useful for the near other non-agile administrative units. For example, HR unit
+future [15]. However, the lack of planning and be a matter may require and need persons to indicate severely the title
+of worry, because corporate customer relationships often cul- role in projects [1], or a change control board may limit
+tivate on following long-lasting organizational plan. Synthe- the constant use of repackages [24]. All units hit by the
+sizing operation with short-term planning needs socializing change to agility require to be notified and discussed, and
+investors and analyzing the process of contracting [16]. the agile process must be made familiar according to their
+
+requirements [1], [15], [24].
+II. LITERATURE REVIEW ASDM also upset business and management related tasks.
+The state of the agile survey has been organized since An essential task in managing organization has to move
+2007 which was version one [17]. It has lately asked a couple towards iterative and feature centric models i.e. deviate
+of questions associated with large-scale development teams from life-cycle models [13], which need modification of
+
+VOLUME 7, 2019 22661
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+approach. The emphasis has to be adopted from long-lasting for including and excluding material, for choosing relevant
+organization level planning to short-term project level readings, the conduction and publicizing quality assessment,
+planning [15]. ASDM suggest that planning is only useful the plan for removing data, the plan for synthesizing data,
+for the near future [15]. Nevertheless, the lack of planning and the methodology for extracting and storing information
+could be a matter of worry, because corporate customer for addressing the research questions [29], [30]. The steps are
+relationships often grow on following long lasting organi- illustrated in Fig. 1.
+zational plan. Combining operation with short-term plan-
+ning needs socializing investors and analyzing the process of
+contracting [1].
+
+While the research literature includes a bunch of expe-
+rience reports, and some case studies on LSAD adoption
+from management perspectives, a summary of this growing
+body of research is still missing in the form of SLR [25].
+The industrial practitioners at the XP2010 [26] choose to
+construct a backlog of topics; they think it should be studied.
+As the leading hot research question, the practitioners voted
+agile and large development teams. The research on ASDM
+is collecting and developing and has created a need for exe-
+cuting SLR [22], [27], [28], the area and premises of LSAD
+from management perspectives have not yet been explored
+via secondary studies. In this paper, we aim at filling some of
+the gap with a hand out the outcome of SLR for LSAD team
+and projects from management perspectives.
+
+In spite of the importance of ASDM in the background
+of LSAD from management perspectives, no SLR has been
+conducted on ASDM for large-scale development from man-
+agement perspectives in general and on the finding of factors
+that have a remarkable impact on vendor organizations in
+specific terms.
+
+III. RESEARCH METHOD FIGURE 1. Portrays the several tiers in the SLR process.
+
+To achieve our expected goals and objectives as an outcome
+from this research accurately, we have adopted systematic
+literature reviews (SLR) to gain maximum from existing C. RESEARCH QUESTIONS
+literature. This research approach has been adopted by other In spite of the importance of ASDM in the context of
+researchers such as [29]. A SLR is a new approach in software large-scale development from management perspectives,
+research field for identification, assessment and interpretation no SLR have been conducted on ASD in general and on
+of all related research for a specific research area, or phe- the finding of factors that impact on hawker organizations in
+nomenon of interest [30]. We had identified critical success specific terms. To do so, we aim to focus the below research
+factors for adopting ASDM for a large scale development question:
+team from management perspectives. The existing literature RQ1. What are critical success factors, as identified in
+has been reviewed through SLR. the literature, in adopting agile at large-scale development
+
+team from management perspective? RQ2. Do the identified
+A. SYSTEMATIC LITERATURE REVIEW (SLR) PROCESS factors show any significant variation from one continent to
+SLR has three major levels/tiers which are described by [30] another continent? RQ3. How are these factors related to the
+and [31] review plan, review execution, and review reporting. study strategies used? RQ4. How are these factors related
+In article at hand, we first plan the SLR plan in the form of a to the company size? RQ5. How are these factors related to
+protocol which is the starting point of a SLR (i.e., planning). the search venues? RQ6. Do the identified factors show any
+
+significant variation over time?
+B. SYSTEMATIC LITERATURE REVIEW (SLR) PROTOCOL
+DEVELOPMENTS D. SEARCH STRATEGY & PUBLICATION SELECTION
+Prior to carrying out the SLR, we designed a review protocol. In conducting the SLR, we used [1] and [2] as our guide-
+It decreases researcher prejudice and enhances the accuracy line for gaining a comprehensive insight into the existing
+and review repeatability [29], [30]. Particularly, it outlines literature. The literature search was performed for the stud-
+context for the exploration, search strategy, exploration ques- ies published in academic journals and conference proceed-
+tions used to look for the relevant literature, setting criterion ings between the years 2000 and 2016, as made available
+
+22662 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+FIGURE 2. Publication selection process.
+
+through the digital libraries of (in alphabetical order); ACM, and applied as a procedure in systematically searching and
+ScienceDirect, Google Scholar, SpringerLink, and IEEE selecting the relevant studies:
+Explore. The numbers of studies initially retrieved and 1. Define the research objective. 2. Conduct several exam-
+identified from these libraries are given in Table 1. Out ple searches; review the scopes. 3. Define the search string;
+of 6867 studies that were retrieved in this way, we identified identify inclusion and exclusion criteria. 4. Conduct an initial
+367 studies that were deemed relevant for the purpose of search. 5. Review the title, abstract, and keywords of the
+this study. Eliminating the duplicate works and narrow down initially retrieved studies. 6. Revise inclusion and exclusion
+more to our area, we targeted 58 studies for a thorough criteria; select potentially relevant studies. 7. Remove dupli-
+analysis. We studied the primary sources of publications and cate studies. 8. Review potentially relevant studies selected;
+reports that introduce the Agile methods and explored the discuss any issues. 9. Review the entire content of ini-
+publications that are commonly referred to in this research tially selected studies (including the references section for
+field. We worked on keywords and terms that these stud- identifying the studies that are potentially missed); identify
+ies use to specify essential concepts of relevance to Agile relevant ones. 10. Review relevant studies selected; discuss
+methods. For the retrieval in the digital libraries, the string any issues. 11. Identify the final set of relevant studies.
+given below was derived and taken as a basis, which was All steps were conducted with the involvement of at least
+applied to the title, keywords, and abstracts of publications: two authors. In selecting the relevant studies in steps 6, 9,
+(‘‘Agile methods’’ or ‘‘agile software development’’ or ‘‘agile and 11 of the search and selection procedure described above,
+methodology or agile system development’’) AND (‘‘Large- we applied the inclusion criteria as the studies that propose,
+scale development team ’’or ‘‘large-scale development team’’ apply, validate, classify, or thoroughly analyze one or more
+or ‘‘large development team’’) AND (Motivators or factors generic Agile methods. Steps 811 were carried out inde-
+or ‘‘success factors’’ or ‘‘positive impact’’ or promoters or pendently by two authors, and conflicts were resolved after
+supporters or key factors). each step. Independent analysis results were documented in
+
+spreadsheets, which were then compared and merged by one
+TABLE 1. Search results. of the authors. Conflicts were noted for discussion, whichwas
+
+held before the joint authors continued with the subsequent
+step. The initial number of studies retrieved in step 4 was
+6867 and after step 5, we selected 1000 studies out of these for
+further investigation. We revised the inclusion and exclusion
+criteria Fig. 2 show this.
+
+The refinement steps in the SLR procedure and resulting
+We used the research questions and a stepwise strategy to number of articles. Working on these studies and at the end
+
+obtain the final search string; the strategy is as follows: of step 6, we came up with 367 studies. We followed the
+Identify intervention, population, and outcome on the basis inclusion criteria and papers were selected based upon these
+
+of research questions. Identify the main term and construct points i.e. Paper that is written in the English Language,
+search term from it. Find the synonyms and alternative The article/paper is available in full text, Research papers
+spellings for each main term. Validate the terms and syn- that are relevant to our research questions, Research work
+onyms in any related paper. Combine these terms using that describes Agile methods frommanagement perspectives,
+Boolean OR/AND operators. Researchwork that describes Agilemethods using large-scale
+
+Some electronic libraries (such as Web of Science and development team, research papers that describes success
+SpringerLink) do not provide advanced search options that or motivators of Agile methods for large scale development
+allow for the use of the search string as is. For these sites, team. In step 7 we removed duplicate studies and followed
+we either extended the context of the search (e.g., in Topic the exclusion criteria i.e. Article/papers/books etc. that do not
+in Web of Science) or separated the search into several fulfill inclusion criteria as mentioned above been excluded.
+sub-searches (e.g., in SpringerLink) preserving the initial Within this set and identified 100 studies for a thorough
+search context. The following steps were derived from the analysis. In steps 8 and 9, we went over these studies in detail,
+guidelines for performing SLRs in software engineering [1] discussed and resolved conflicts, and identified 67 studies for
+
+VOLUME 7, 2019 22663
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 2. Data extracted.
+
+a deeper review. We had final discussions at steps 10 and In order to answer RQ1, Table 2 shows a list of SFs
+11 for the inclusion of several studies, and reached 60 and (Success Factors) identified through the SLR that can lead
+finally 58 studies, respectively. All search pages saved as Project Managers towards adopting agile at large-scale devel-
+HTML files. The primary data of each search recorded elec- opment team.
+tronically using Google drive form, and the below-mentioned A factor with high frequency/percentage means that these
+data documented: factors are generally applicable or recognized factors in the
+
+Search date Search Phase Name of the database No. of literature. Leadership strong commitment and team auton-
+publications found Initial selection decision Final selection omy (45%) is the most commonly reported SFs in our
+decision No of publication selected Search strategy study. Similarly Cooperative organizational culture (44%)
+
+We checked and assessed the quality of finally selected is the 2nd most cited SF in our findings. In our study,
+papers. The assessment describes these points; is the objec- 40% of authors have cited team competency in agile devel-
+tive of the research is clearly defined? Are the outcomes of opment expertise and training and learning and briefing
+the research is connected to the objective of the research? of top management on agile as a generally recognized
+Whether the Agile software development context is discussed SF.
+clearly? Is it clear how the factor was identified? Every
+checklist coded as N.A, YES, or NO.
+
+A. FACTORS IDENTIFIED THROUGH SLR
+E. DATA EXTRACTION STRATEGY 37 % of authors have cited Customer satisfaction and
+The following sections are considered in the data extraction Customer satisfaction as SF. 33% of authors have men-
+process [29], [30]: tioned sustainable planning as the SF. 32% of authors said
+
+Requirements management using agile-oriented requirement
+DATA EXTRACTION PROCESS management process as the SF. 26% of authors mentioned
+
+Data are extracted using data extraction items shown Use of automated software tools and Scheduled trainings for
+
+in Table 2. team members as SF. 24% authors said strong collaborations
+and communications as SF. 23% authors said face to face
+meetings as SF. 21% authors said riskmanagement and strong
+
+F. DATA STORAGE executive support as SF. 14% authors said mechanism for
+Data summary are stored in SPSS. change management as SF. 13% authors said knowledge
+
+sharing management and quality production uses pair pro-
+G. DATA SYNTHESIS gramming as SF. 11% authors said dedicated management as
+For the RQ1, the data are synthesized using tables such SF. 9% authors said pilot project in case of no experience as
+that any background information is placed in one table, SF. 6% authors said agile development environment and team
+whereas the other table will include the data classifying encouragement as success factor SF.
+CSFs having the columns (S.No, Motivators, Frequency, and
+Percentages).
+
+The first and the last author work is primary reviewers B. ANALYSIS ON DIFFERENT VARIABLES
+while the second work is secondary reviewers. In the results section the findings related to research questions
+
+are discussed. For the analysis purpose, we have found sig-
+IV. RESULTS nificant difference in success factors using different variables.
+In this phase, the critical success factors were extracted from For significant difference chi-square (linear by linear associ-
+58 research papers and have been categorized into 21 differ- ation) test is used. For analysis of the significant difference
+ent groups with a specific name, their frequency, and percent- amongst nominal and ordinal variables, the linear by linear
+age. The percentage will help in decision making regarding chi-square test is considered more powerful as compared to
+the criticality of a success factor. Pearson chi-square test [32].
+
+22664 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 3. Success factors identified through SLR.
+
+FIGURE 3. Shows data extraction process.
+
+1) COMPARISON OF THE FACTORS ACROSS VARIOUS Success factors found in various continents are listed
+CONTINENTS in Table 4. The final samples of the papers are grouped into
+The data comparisons between different continents, i.e., Asia, different contents based on the study location. The number
+Europe, and North America are shown in Table 3 and Fig. 3. of papers identified for some of the continents was very
+The data from other continents have been ignored because small in numbers that’s why we have only compared the
+of low sample size. The objective of this analysis is to find SFs identified in three continents, i.e. Asia, America, Europe
+out any differences in these continents with respect to the and mixed (having combination of two or more continents),
+identified SFs. We have used the linear-by-linear association because. The aim of this analysis is to find whether these SFs
+chi-square test to find any significant difference between differ from continent to continent. Cooperative organizational
+barriers throughout the continents. culture is critical in Asia, Europe, America and Mixed type.
+
+VOLUME 7, 2019 22665
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 4. Summary of the identified motivators across four continents.
+
+TABLE 5. Distribution of SFS across four continents.
+
+Team competency and agile development expertise is also agile-oriented requirement management processes is critical
+critical in Asia, America and Mixed type. Customer satis- in Asia, America and Africa.
+faction and Strong collaboration with customer are critical
+in Asia and Mixed Sustainable planning is critical in Asia, a: COMPARISON OF SFS BASED ON STUDY STRATEGY
+Mixed and America Scheduled trainings for team members, USED
+Use of automated software tools and Strong collaboration Table 5 and Fig. 4, show our SLR results for RQ1 grounded
+and communication are critical in Asia only. Risk Manage- on the study method used. We have grouped our final sam-
+ment is critical in America and Mixed type. Training and ple of articles, identified through the SLR, based on the
+learning, and briefing of top management on agile is critical study method used i.e. interviews(I), case studies(CS), litera-
+in Asia, Africa, and America and Mixed type. Leadership ture reviews (LR), surveys(S), systematic literature reviews
+strong commitment and team autonomy is critical inAmerica, (SLR), experience report (ER), thesis (T), experimental
+Africa, Mixed and Europe Requirements management using study (ES) and other (other than listed). These eight study
+
+22666 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 6. Summary of SFS based on study strategies.
+
+interview, literature review, SLR and other. Strong collab-
+oration with customer is critical in the case study, inter-
+view, survey, SLR, literature review and other. Sustainable
+planning is critical in the interview, SLR, experience report,
+survey and literature review. Use of automated software tool
+is critical in the survey, SLR and experience report. Strong
+collaborations and communications are critical in interview,
+survey, and literature review. Risk management is critical
+in SLR and interview. Knowledge sharing management is
+critical in literature review Quality Production Using Pair
+Programming management is critical in SLR. Mechanism
+for Change Management is critical in Interview, survey, and
+SLR. Leadership Strong Commitment and Team autonomy
+is critical in case study, Interview, Survey, SLR, experience
+report, other and literature review Requirements management
+using agile-oriented requirement management processes is
+
+FIGURE 4. Continents wise distribution of research papers. critical in case study, survey, SLR, and experience report. The
+remaining is critical in none of the study strategy as shown
+in Table 6. Table 6 divulges that case study and experience
+
+strategies were identified the by primary reviewer (author) report are the utmost used study strategies in our study. These
+and validated by the secondary reviewer (co-authors) using findings can be used in order to identify the position of the
+the inter-ratter reliability test. We have identified various various research methodologies i.e., which study method is
+distinct SFs; across these eight study strategies. more influential for producing information. These findings
+
+may also assist researcher working in the field of empiri-
+b: DISTRIBUTION OF SFS BASED ON STUDY cal software engineering in the production of their research
+STRATEGY USED designs.
+Different SFS were reported with different weights across
+eight study method as shown in Table 6, for example. Strong
+Executive support is critical in Interview and SLR Coop- c: COMPARISON OF SFS BASED ON COMPANY SIZE
+erative organizational culture is critical in the case study, Table 7 and Fig. 5 show our SLR results grounded on the
+SLR, experience report, literature review, and survey Face company size used.
+to face meeting is critical in the literature review and survey We have grouped organization into small, large, medium,
+Dedicated management is critical in survey and SLR. Team mixed and unknown type. The chi-square test illustrates a sig-
+competency in agile expertise is critical in the case study, nificant difference for face to face meetings and requirements
+survey, interview, literature review, and experience report. management using agile-oriented requirement management
+Customer satisfaction is critical in the case study, survey, processes.
+
+VOLUME 7, 2019 22667
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 7. Distribution of SFS across various study strategies.
+
+FIGURE 5. Study strategies-wise distribution of research papers.
+
+d: DISTRIBUTION OF SFS BASED ON COMPANY SIZE team competency in agile development expertise, customer
+The results of our SLR study signpost that 21 out of 21 SFs satisfaction, strong collaboration with customer, strong col-
+have been described in the related literature of organization laborationwith customer, riskmanagement, leadership strong
+size small, medium, large, and mixed as shown in Table 8. commitment and team autonomy, training and learning and
+However, different SFs were reported with different weights briefing of top management on agile and knowledge shar-
+across eight study method, for example. Cooperative orga- ing management is critical in unknown Cooperative orga-
+nizational culture, use of automated software tools, sched- nizational culture, sustainable planning, leadership strong
+uled trainings for team members, training and learning and commitment and team autonomy, training and learning and
+briefing of top management on agile and requirements man- briefing of top management on agile and team competency
+agement using agile-oriented requirement management pro- in agile development expertise is critical in large. Quality
+cess is critical in small and medium. Team competency in production using pair programming and pilot project in case
+agile development expertise, customer satisfaction and strong of no experience is critical in small Leadership strong com-
+collaboration with customer, strong collaborations and com- mitment and team autonomy is critical in small medium
+munications is critical in medium. Strong executive support, Strong executive support, cooperative organizational culture,
+face to face meetings, cooperative organizational culture, face to face meetings, team competency in agile development
+
+22668 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 8. Summary of SFS based on company size.
+
+strong collaboration with customer, strong collaborations and
+communications and mechanism for change management.
+
+f: DISTRIBUTION OF SFS BASED ON STUDY
+SEARCH VENUES
+The results of our SLR study signpost that 21 out of 21 SFs
+have been described in the related literature in libraries IEE-
+EXplore, Science Direct, ACM, Springer Link and Google
+Scholar, as shown in Table 10. For example; Sustainable
+planning, leadership strong commitment and team autonomy,
+training and learning and briefing of topmanagement on agile
+and requirements management using agile-oriented require-
+ment management processes are critical in IEEEXplore.
+Cooperative organizational culture, Sustainable planning and
+
+FIGURE 6. Various company size wise distributions of research papers. Leadership Strong Commitment and Team autonomy are crit-
+ical in ACM. Cooperative organizational culture, face to face
+meetings, team competency agile development expertise, cus-
+tomer satisfaction, strong collaboration with customer, strong
+
+expertise, customer satisfaction, strong collaboration with collaborations and communications, training and learning
+customer, sustainable planning, risk management, leadership and briefing of top management on agile and leadership
+strong commitment and team autonomy, training and learning strong commitment and team autonomy are critical in Sci-
+and briefing of top management on agile and requirements enceDirect.
+management using agile-oriented requirement management Leadership strong commitment and team autonomy is crit-
+process is critical in mixed. ical in SpringerLink. Cooperative organizational culture, face
+
+to face meetings, team competency in agile development
+e: COMPARISON OF SFS BASED ON STUDY expertise, customer satisfaction, strong collaboration with
+SEARCH VENUES customer, strong collaborations and communications, sus-
+Table 9 and Fig. 6, show our SLR results for RQ1 grounded tainable planning, use of automated software tools, scheduled
+on the organization size used. trainings for team members, risk management, requirements
+
+We have search IEEEXplore, Science Direct, ACM, management using agile-oriented requirement management
+Springer Link, and Google Scholar as search venues. process, training and learning and briefing of top manage-
+
+The chi-square test illustrates a significant difference ment on agile and leadership strong commitment and team
+for cooperative organizational culture, customer satisfaction, autonomy are critical in Google Scholar.
+
+VOLUME 7, 2019 22669
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 9. Distribution of SFS across various company sizes.
+
+TABLE 10. Summary of SFS based on various search venues.
+
+g: COMPARISON OF SUCCESSES FACTORS BASED from 2003-2013 and third decade is from 2014 to 2016 as
+ON DECADES presented in Table 11 and pastoralized in Fig. 7. In our trail
+We have divided search periods into three decades, the first search, we have found that no research paper has been found
+decade is from 1992 to 2002, the second decade is before 2003 which discussed the adoption of ASDM. Our
+
+22670 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 11. Distribution of SFS across different libraries.
+
+TABLE 12. Summary of SFS based on decades.
+
+search and results also show that this is new area of ASD h: DISTRIBUTION OF SUCCESSES FACTORS BASED
+maturing since 2003 and limited numbers of researchers has ON DECADES
+contributed to this. We found critical motivators in different decades as shown
+
+The chi-square test illustrates a significant difference for in Table 12, and summarized as follow. Cooperative orga-
+Mechanism for Change Management. nizational culture, team competency in agile development
+
+VOLUME 7, 2019 22671
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+TABLE 13. Distribution of SFS across decades.
+
+Strong collaboration with customer, Sustainable planning,
+Mechanism for Change Management, Leadership Strong
+Commitment and Team autonomy, Training and Learning and
+Briefing of Top Management On Agile and Requirements
+management using agile-oriented requirement management
+process are critical in Decade2.
+
+V. CONCLUSION AND FUTURE WORK
+Through SLR, we have identified different Motivators that
+should be addressed and keep in view by project manager
+when adopting software development for large scale develop-
+ment team. In our study, the defined criteria for the criticality
+of success are 30%, the Motivators which have percentage
+greater than the defined percentage; it will be considered as
+
+FIGURE 7. Various search venue wise distributions of research papers. critical. Our research reveals some of the Motivators need
+special attention because their occurrence creates more moti-
+vation by adopting agile at large scale. We also found that
+the impact of different motivators through different decades
+and continents for project manager guidance because some
+Motivators were most critical in one region while less criti-
+cal in other regions. Similarly, some of the motivators were
+more critical in the previous decade but less critical presently
+because of different improvements in software processes and
+technologies.
+
+There are 58 research papers selected through SLR for
+conducting this research. In these research papers, maximum
+have been written and published by scholars, academics and
+faculty members of the universities. Most of these researchers
+may not have the practical experience of managing the agile
+
+FIGURE 8. Various time wise distributions of research papers. software development at a large scale. Theoretical work has
+been done by most of the researchers. We have used these
+
+expertise, customer satisfaction, strong collaboration with research papers for finding the Motivators in adopting agile
+customer, sustainable planning, use of automated software at large scale from management perspective. Now problem
+tools, scheduled trainings for team members, leadership is that up to what extent our research findings are valid?
+strong commitment and team autonomy and training and To prove these findings correct and to the point, we plan
+learning and briefing of top management on agile are critical to conduct questionnaire survey and empirical study in the
+in decade1. software industry and take feedback of practitioners who
+
+Cooperative organizational culture, Team Competency practically working in the agile software development envi-
+in Agile development expertise, Customer satisfaction, ronment and to find other motivators apart from identified
+
+22672 VOLUME 7, 2019
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+one which has been skipped in this study. Through SLR, [18] M. F. Majeed, V. Esichaikul, and M. E. No, ‘‘Use of multi-agent based
+we have identified 21 different motivators for adopting agile platform for providing document-centric interoperability in the realm of
+
+E-government,’’ inProc. 6th Int. Conf., IAIT. Bangkok, Thailand: Springer,
+at large scale as shown in Table 2. These identified moti- Dec. 2013, pp. 141–149.
+vators may help the project manager when adopting agile [19] M. Fowler and J. Highsmith, ‘‘The agile manifesto,’’ Softw. Develop.,
+at large-scale development team. These motivators are also vol. 9, no. 8, pp. 28–35, 2001.
+
+[20] M. Fowler, ‘‘Put Your Process on a Diet-As a reaction to cumbersome
+analyzed from different angles like decade wise and conti- approaches to development, new methodologies have appeared. These
+nent wise for project managers guidance. In our study we methods attempt a compromise between no process and toomuch process,’’
+have identified following future goals that we will follow Softw. Develop., vol. 8, no. 12, pp. 32–39, 2000.
+
+[21] A.M.M. Hamed and H. Abushama, ‘‘Popular agile approaches in software
+in future: The validation of identified motivators by using development: Review and analysis,’’ in Proc. Int. Conf. Comput., Elect.
+the technique of questionnaire survey and empirical study Electron. Eng. (ICCEEE), Aug. 2013, pp. 160–166.
+with the help of experts and practitioners working in Agile [22] T. Dybå and T. Dingsøyr, ‘‘Empirical studies of agile software devel-
+
+opment: A systematic review,’’ Inf. Softw. Technol., vol. 50, nos. 9–10,
+Software Development environment. In future, we want to pp. 833–859, 2008.
+rank the factors using the fuzzymulti criteria decisionmaking [23] J. A. Livermore, ‘‘Factors that significantly impact the implementation
+process. Additional motivators will also be identified from of an agile software development methodology,’’ J. Softw., vol. 3, no. 4,
+
+pp. 31–36, 2008.
+experts and practitioners through empirical study if any. [24] M. Lindvall et al., ‘‘Agile software development in large organizations,’’
+
+Computer, vol. 37, no. 12, pp. 26–34, Dec. 2004.
+
+REFERENCES [25] S. Freudenberg and H. Sharp, ‘‘The top 10 burning research questions from
+practitioners,’’ IEEE Softw., vol. 27, no. 5, pp. 8–9, Sep./Oct. 2010.
+
+[1] B. Boehm and R. Turner, ‘‘Management challenges to implementing agile [26] K. Power, L. Morgan, and K. Conboy, ‘‘Enabling open innovation through
+processes in traditional development organizations,’’ IEEE Softw., vol. 22, agile development,’’ in Proc. 11th Int. Conf. Agile Softw. Develop., 2010,
+no. 5, pp. 30–39, Sep. 2005. pp. 1–3.
+
+[2] T. Dyba and T. Dingsoyr, ‘‘What do we know about agile software devel- [27] S. Jalali and C. Wohlin, ‘‘Global software engineering and agile practices:
+opment?’’ IEEE Softw., vol. 26, no. 5, pp. 6–9, Sep./Oct. 2009. A systematic review,’’ J. Softw., Evol. Process, vol. 24, no. 6, pp. 643–659,
+
+[3] T. Dingsøyr and N. B. Moe, ‘‘Towards principles of large-scale agile 2012.
+development,’’ in Proc. Int. Workshops. Rome, Italy: Springer, May 2014, [28] M. Kaisti et al., ‘‘Agile methods for embedded systems development—A
+pp. 1–8. literature review and a mapping study,’’ EURASIP J. Embedded Syst.,
+
+[4] M. Paasivaara, B. Behm, C. Lassenius, and M. Hallikainen, ‘‘Towards vol. 1, no. 1, p. 15, 2013.
+rapid releases in large-scale XaaS development at ericsson: A case study,’’ [29] S. Ali, L. Hongqi, andM. F. Abrar, ‘‘Systematic literature review of critical
+in Proc. IEEE 9th Int. Conf. Global Softw. Eng. (ICGSE), Aug. 2014, barriers to software outsourcing partnership,’’ in Proc. 5th Int. Multi-Topic
+pp. 16–25. ICT Conf. (IMTIC), Apr. 2018, pp. 1–8.
+
+[5] M. Paasivaara, C. Lassenius, V. T. Heikkilä, K. Dikert, and C. Engblom, [30] B. Kitchenham et al., ‘‘Systematic literature reviews in software
+‘‘Integrating global sites into the lean and agile transformation at ericsson,’’ engineering–a tertiary study,’’ Inf. Softw. Technol., vol. 52, no. 8,
+in Proc. IEEE 8th Int. Conf. Global Softw. Eng. (ICGSE), Aug. 2013, pp. 792–805, 2010.
+pp. 134–143. [31] D. Budgen and P. Brereton, ‘‘Performing systematic literature reviews in
+
+[6] M. Paasivaara, S. Durasiewicz, and C. Lassenius, ‘‘Using scrum in a software engineering,’’ in Proc. 28th Int. Conf. Softw. Eng. New York, NY,
+globally distributed project: A case study,’’ Softw. Process, Improvement USA: ACM, 2006, pp. 1051–1052.
+Pract., vol. 13, no. 6, pp. 527–544, 2008. [32] M. Lacity, L. Willcocks, and D. Feeny, ‘‘Commercializing the back office
+
+[7] H. Berger and P. Beynon-Davies, ‘‘The utility of rapid application devel- at lloyds of london:: Outsourcing and strategic partnerships revisited,’’ Eur.
+
+opment in large-scale, complex projects,’’ Inf. Syst. J., vol. 19, no. 6, Manage. J., vol. 22, no. 2, pp. 127–140, 2004.
+
+pp. 549–570, 2009.
+[8] K. Petersen and C. Wohlin, ‘‘The effect of moving from a plan-driven
+
+to an incremental software development approach with agile practices,’’
+Empirical Softw. Eng., vol. 15, no. 6, pp. 654–693, 2010.
+
+[9] E. Bjarnason, K. Wnuk, and B. Regnell, ‘‘A case study on benefits and
+side-effects of agile practices in large-scale requirements engineering,’’ in
+Proc. 1st Workshop Agile Requirements Eng. New York, NY, USA: ACM,
+2011, p. 3.
+
+[10] T. Dingsøyr, T. E. Fægri, and J. Itkonen, ‘‘What is large in large-scale?
+A taxonomy of scale for agile software development,’’ in Proc. 15th Int.
+Conf., PROFES. Helsinki, Finland: Springer, Dec. 2014, pp. 273–276.
+
+[11] L. Williams, ‘‘Agile software development methodologies and practices,’’
+in Advances in Computers, vol. 80. Amsterdam, The Netherlands: Elsevier,
+2010, pp. 1–44.
+
+[12] A. Elshamy and A. Elssamadisy, ‘‘Divide after you conquer: An agile
+software development practice for large projects,’’ in Proc. 7th Int. Conf.
+Oulu, Finland: Springer, Jun. 2006, pp. 164–168. MUHAMMAD FAISAL ABRAR was born in
+
+[13] S. Nerur, R. Mahapatra, and G. Mangalaraj, ‘‘Challenges of migrating to Swat, Pakistan, in 1989. He received the M.S.
+agile methodologies,’’ Commun. ACM, vol. 48, no. 5, pp. 72–78, 2005. degree in software engineering from Qurtuba Uni-
+
+[14] S. C. Misra, V. Kumar, and U. Kumar, ‘‘Identifying some critical changes versity, Peshawar, Pakistan, under the research
+required in adopting agile practices in traditional software development supervision of Dr. S. Rehman. He is currently
+projects,’’ Int. J. Qual. Rel. Manage., vol. 27, no. 4, pp. 451–474, 2010. pursuing the Ph.D. degree with the Department
+
+[15] M. Cohn and D. Ford, ‘‘Introducing an agile process to an organization of Computer Software Engineering, University of
+[software development],’’ Computer, vol. 36, no. 6, pp. 74–78, Jun. 2003. Engineering and Technology at Mardan, under the
+
+[16] B. Boehm, ‘‘Get ready for agile methods, with care,’’ Computer, vol. 35, supervision of Assistant Professor M. S. Khan.
+no. 1, pp. 64–69, Jan. 2002. He is also teaching at the University of Swat,
+
+[17] P. Rodríguez, J. Markkula, M. Oivo, and K. Turula, ‘‘Survey on agile and Pakistan. His research interests include agile software development, soft-
+lean usage in finnish software industry,’’ in Proc. ACM-IEEE Int. Symp. ware quality assurance, software outsourcing partnership, empirical software
+Empirical Softw. Eng. Meas., Sep. 2012, pp. 139–148. engineering, systematic literature review, big data, and machine learning.
+
+VOLUME 7, 2019 22673
+
+
+
+M. F. Abrar et al.: Motivators for Large-Scale Agile Adoption From Management Perspective: An SLR
+
+MUHAMMAD SOHAIL KHAN received the MUHAMMAD FARAN MAJEED received the
+M.S. degree from the Computer Software Engi- M.S. degree (Hons.) in computer science from
+neering Department, University of Engineering CECOS University of IT and Emerging Sci-
+and Technology at Peshawar, in 2012, and the ence Peshawar, Pakistan, in 2011, and the
+Ph.D. degree from Jeju National University, South Ph.D. degree in computer science from the
+Korea, in 2016. He had been a part of the software Department of Information and Communica-
+development industry in Pakistan as a designer and tion Technologies, Asian Institute of Technology,
+developer. He is currently an Assistant Professor Thailand. His research interests include future
+with the Department of Computer Software Engi- Internet architectures, the Internet of Things,
+neering, University of Engineering and Technol- multimedia communications, network robotics,
+
+ogy at Mardan, Pakistan. His research interests include the investigation sensor networks, and agile software.
+and application of alternate programming strategies to enable the involve-
+ment of masses in the Internet-of-Things application design and develop- AMJAD ALI received the B.Sc. degree in com-
+ment, end-user programming, human–computer interactions, and empirical
+
+puter science from the University of Peshawar,
+software engineering.
+
+Pakistan, in 1997, the M.Sc. degree in computer
+science from Gomal University, Pakistan, in 2000,
+the M.S. degree in computer science from the
+University of Peshawar, in 2010, and the Ph.D.
+degree from the Real-Time Systems Laboratory,
+
+SIKANDAR ALI was born in Swat, Pakistan, Gyeongsang National University, South Korea,
+in 1985. He received theM.Phil. degree in software in 2016. He was a Lecturer with the University of
+engineering from the University of Malakand, Peshawar, from 2001 to 2011. Since 2012, he has
+Lower Dir, Pakistan, under the research supervi- been an Assistant Professor with the Department of Computer and Software
+sion of Dr. S. U. Khan. He is currently pursuing Technology, University of Swat. His research interests include real-time
+the Ph.D. degree with the Department of Com- systems, power-aware computing, and fault-tolerance computing.
+puter Science and Technology, China University
+of Petroleum, Beijing, under the supervision of BAHRUL AMIN was born in Swat, Pakistan,
+Prof. Dr. L. Hongqi. He is also teaching at the in 1988. He received the B.S. degree (Hons.) in
+University of Swat, Pakistan. He has published a computer science and the M.S. degree in computer
+
+number of articles in well-reputed international conferences and journals, science from the Computer Science Department,
+including ICGSE, IMTIC, the Journal of Computers, the IEEE ACCESS, CECOS University of IT and Emerging Science
+the Journal of Intelligent & Fuzzy Systems, and the Journal of System and Peshawar, Pakistan. He is currently a Lecturer
+Software. His research interests include software outsourcing partnership, with the University of Swat, Pakistan. His research
+empirical software engineering, systematic literature review, requirements interest includes WSN.
+engineering, green computing, software testing and test automation, agile
+software development, and global software engineering.
+
+NASIR RASHEED was born in Swat, Pakistan,
+in 1980. He received the M.Sc. degree in computer
+science from the University of Peshawar, Pakistan,
+the M.S. degree in wireless sensor networks from
+
+UMAR ALI received the bachelor’s degree Abasyn University, Peshawar, Pakistan, and the
+(16 years of education) from the University of Ph.D. degree in software engineering from the
+Peshawar, Pakistan, in 2007, and the master’s University of Malakand, Pakistan. From 2007 to
+degree from the Asian Institute of Technology, 2011, he was a Lecturer with the Department of
+Thailand, in 2016. He joined the Department Computer Science and IT, University ofMalakand.
+of Computer Science, University of Malakand, Since 2011, he has been an Assistant Professor
+in 2008, as a Lecturer. Since 2010, he has been with the Computer ScienceDepartment, University ofMalakand. He has over
+a Lecturer with the Department of Computer and 20 publications in well-reputed journals, including the Journal of Software:
+Software Technology, University of Swat. His Evolution and Process. His research interests include agile software devel-
+main areas of research interest are electronic gov- opment, green software engineering, and global software development.
+
+ernment, cloud computing, and systematic literature review.
+
+22674 VOLUME 7, 2019
